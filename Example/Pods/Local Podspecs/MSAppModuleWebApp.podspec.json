@@ -1,0 +1,52 @@
+{
+  "name": "MSAppModuleWebApp",
+  "version": "0.2.3",
+  "summary": "MSAppModuleWebApp",
+  "description": "MSAppModuleWebApp\n* [x]JS\n* [x]MenuConfig\n** [x]Share\n** [x]Search\n* [x]ZXG\n* [x]Theme\n* [x]Routes",
+  "homepage": "http://ph.benemind.com/diffusion/WEBAPP",
+  "license": "MIT",
+  "authors": {
+    "Ryan Wang": "wanglun02@gmail.com"
+  },
+  "source": {
+    "git": "http://ph.benemind.com/diffusion/WEBAPP/msappmodulewebapp.git",
+    "tag": "0.2.3"
+  },
+  "platforms": {
+    "ios": "7.0"
+  },
+  "requires_arc": true,
+  "subspecs": [
+    {
+      "name": "WebViewController",
+      "source_files": "Pod/Classes/**/*",
+      "resources": [
+        "Pod/Assets/**/*.js",
+        "Pod/Assets/**/*.png"
+      ],
+      "frameworks": [
+        "UIKit",
+        "Foundation",
+        "JavaScriptCore",
+        "WebKit"
+      ],
+      "dependencies": {
+        "SDWebImage": [
+
+        ],
+        "CocoaLumberjack": [
+          "~> 2.4.0"
+        ],
+        "Masonry": [
+
+        ],
+        "WebViewJavascriptBridge": [
+
+        ],
+        "JLRoutes": [
+
+        ]
+      }
+    }
+  ]
+}

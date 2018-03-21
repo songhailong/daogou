@@ -1,0 +1,36 @@
+{
+  "name": "YHLTableView",
+  "version": "1.0.0",
+  "summary": "tableView封装",
+  "description": "封装了tableview的dataSource、下拉上拉刷新、cellHeight计算",
+  "homepage": "https://github.com/yanghl/YHLTableView",
+  "license": "MIT",
+  "authors": {
+    "sean.yang": "272789124@qq.com"
+  },
+  "source": {
+    "git": "https://github.com/yanghl/YHLTableView.git",
+    "tag": "1.0.0"
+  },
+  "platforms": {
+    "ios": "7.0"
+  },
+  "source_files": "YHLTableView/Classes/**/*.{h,c,m}",
+  "requires_arc": true,
+  "resource_bundles": {
+    "YHLTableView": [
+      "YHLTableView/Assets/**/*.png"
+    ]
+  },
+  "dependencies": {
+    "UITableView+FDTemplateLayoutCell": [
+
+    ],
+    "MJRefresh": [
+
+    ],
+    "AFNetworking": [
+
+    ]
+  }
+}

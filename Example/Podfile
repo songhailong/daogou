@@ -1,0 +1,28 @@
+platform :ios, '9.0'
+source 'http://repo.baichuan-ios.taobao.com/baichuanSDK/AliBCSpecs.git'
+source 'https://github.com/yanghl/seanspec.git'
+source 'https://github.com/CocoaPods/Specs.git'
+
+target 'dg_Example' do
+  pod 'AlibcTradeSDK'
+  pod 'FDFullscreenPopGesture'
+  pod 'Masonry'
+  pod 'MBProgressHUD'
+  pod 'MJExtension'
+  pod 'MJRefresh'
+  pod 'AFNetworking'
+  pod 'PINCache'
+  pod 'NSDate-Additions'
+  pod 'SDWebImage'
+  pod 'UMengAnalytics'
+  pod 'Bugtags'
+  pod 'IQKeyboardManager'
+  pod 'WechatOpenSDK'
+  pod 'JPush'
+  #    pod 'BaiduMobStat'//基础版
+  pod 'BaiduMobStatCodeless'
+  
+  pod 'MSAppModuleWebApp', :git =>'https://github.com/yanghl/webapp-ios8.git'
+  pod 'YHLTableView', :git =>'https://github.com/yanghl/YHLTableView.git'
+  pod 'commonLib', :git => 'https://github.com/yanghl/commonLib.git'
+end

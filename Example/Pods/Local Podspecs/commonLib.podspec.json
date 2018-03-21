@@ -1,0 +1,58 @@
+{
+  "name": "commonLib",
+  "version": "0.1.0",
+  "summary": "commonLib  各种帮助类集合",
+  "description": "各种帮助类集合 各种帮助类集合 各种帮助类集合 各种帮助类集合 各种帮助类集合 各种帮助类集合\n各种帮助类集合 各种帮助类集合.",
+  "homepage": "https://github.com/yanghl/commonLib.git",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "sean.yang": "272789124@qq.com"
+  },
+  "source": {
+    "git": "https://github.com/yanghl/commonLib.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "requires_arc": true,
+  "frameworks": [
+    "Foundation",
+    "CoreGraphics"
+  ],
+  "source_files": "commonLib/Classes/**/*.{h,c,m,swift}",
+  "resources": [
+    "commonLib/Classes/**/*.{xib,nib,plist,storyboard,ttf}",
+    "commonLib/Assets/**/*.png"
+  ],
+  "public_header_files": "EMSpeed/UIKit/FontAwesome+iOS/**/*.h",
+  "dependencies": {
+    "AFNetworking": [
+
+    ],
+    "JSONModel": [
+
+    ],
+    "PINCache": [
+
+    ],
+    "JLRoutes": [
+
+    ],
+    "CocoaLumberjack": [
+
+    ],
+    "SDWebImage": [
+
+    ],
+    "MBProgressHUD": [
+
+    ],
+    "Masonry": [
+
+    ]
+  }
+}

@@ -1,0 +1,1 @@
+../../../MSAppModuleWebApp/Pod/Classes/WebBridgeCore/JSBridgeModule.h
