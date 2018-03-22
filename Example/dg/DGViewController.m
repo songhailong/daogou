@@ -7,16 +7,9 @@
 //
 
 #import "DGViewController.h"
-#import <AlibcTradeBiz/AlibcTradeBiz.h>
-#import <AlibcTradeSDK/AlibcTradeSDK.h>
-#import "MyAlertView.h"
-#import <AlibabaAuthSDK/albbsdk.h>
-#import <AlibcTradeSDK/AlibcTradeShowParams.h>
-#import "MyAlertView.h"
-#import "ALiTradeWebViewController.h"
+#import "DGGlobalConfig.h"
 
-#import "UIKit/UIKit.h"
-#import "ALiTradeSDKShareParam.h"
+
 @interface DGViewController ()
 @property(nonatomic, strong) loginSuccessCallback loginSuccessCallback;
 @property(nonatomic, strong) loginFailureCallback loginFailedCallback;
@@ -24,6 +17,7 @@
 - (IBAction)btnClick:(id)sender;
 
 - (IBAction)openDetail:(id)sender;
+- (IBAction)openCarClick:(id)sender;
 @end
 
 @implementation DGViewController
@@ -85,115 +79,44 @@
     [self OpenByPage:page];
 }
 
+- (IBAction)openCarClick:(id)sender {
+    id<AlibcTradePage> page = [AlibcTradePageFactory myCartsPage];
+    [self OpenByPage:page];
+}
+
 - (void)OpenByPage:(id<AlibcTradePage>)page
 {
     AlibcTradeShowParams* showParam = [[AlibcTradeShowParams alloc] init];
-    showParam.openType = [self openType];
+    showParam.openType = [DGGlobalConfig openType];
     //    showParam.backUrl=@"tbopen23082328:https://h5.m.taobao.com";
     
     showParam.backUrl=[ALiTradeSDKShareParam sharedInstance].backUrl;
     BOOL isNeedPush=[ALiTradeSDKShareParam sharedInstance].isNeedPush;
     BOOL isBindWebview=[ALiTradeSDKShareParam sharedInstance].isBindWebview;
     showParam.isNeedPush=isNeedPush;
-    showParam.nativeFailMode=[self NativeFailMode];
+    showParam.nativeFailMode=[DGGlobalConfig NativeFailMode];
     
     //    showParam.linkKey = @"tmall_scheme";//暂时拉起天猫
-    showParam.linkKey=[self schemeType];
+    showParam.linkKey=[DGGlobalConfig schemeType];
     //    showParam.linkKey = @"dingding_scheme";//暂时拉起天猫
     
-    if (isBindWebview) {
+    if (!isBindWebview) {
         
         ALiTradeWebViewController* view = [[ALiTradeWebViewController alloc] init];
-        NSInteger res = [[AlibcTradeSDK sharedInstance].tradeService show:view webView:view.webView page:page showParams:showParam taoKeParams:[self taokeParam] trackParam:[self customParam] tradeProcessSuccessCallback:self.onTradeSuccess tradeProcessFailedCallback:self.onTradeFailure];
+        NSInteger res = [[AlibcTradeSDK sharedInstance].tradeService show:view webView:view.webView page:page showParams:showParam taoKeParams:[DGGlobalConfig taokeParam] trackParam:[DGGlobalConfig customParam] tradeProcessSuccessCallback:self.onTradeSuccess tradeProcessFailedCallback:self.onTradeFailure];
         if (res == 1) {
             [self.navigationController pushViewController:view animated:YES];
         }
     } else {
-        if (isNeedPush) {
-            [[AlibcTradeSDK sharedInstance].tradeService show:self.navigationController page:page showParams:showParam taoKeParams:[self taokeParam] trackParam:[self customParam] tradeProcessSuccessCallback:self.onTradeSuccess tradeProcessFailedCallback: self.onTradeFailure];
+        if (!isNeedPush) {
+            [[AlibcTradeSDK sharedInstance].tradeService show:self.navigationController page:page showParams:showParam taoKeParams:[DGGlobalConfig taokeParam] trackParam:[DGGlobalConfig customParam] tradeProcessSuccessCallback:self.onTradeSuccess tradeProcessFailedCallback: self.onTradeFailure];
         } else {
-            [[AlibcTradeSDK sharedInstance].tradeService show:self page:page showParams:showParam taoKeParams:[self taokeParam] trackParam:[self customParam] tradeProcessSuccessCallback:self.onTradeSuccess tradeProcessFailedCallback: self.onTradeFailure];
+            [[AlibcTradeSDK sharedInstance].tradeService show:self page:page showParams:showParam taoKeParams:[DGGlobalConfig taokeParam] trackParam:[DGGlobalConfig customParam] tradeProcessSuccessCallback:self.onTradeSuccess tradeProcessFailedCallback: self.onTradeFailure];
         }
         
     }
 }
 
--(AlibcOpenType)openType{
-    
-    AlibcOpenType openType=AlibcOpenTypeAuto;
-    switch ([ALiTradeSDKShareParam sharedInstance].openType) {
-            case 0:
-            openType=AlibcOpenTypeAuto;
-            break;
-            case 1:
-            openType=AlibcOpenTypeNative;
-            break;
-            case 2:
-            openType=AlibcOpenTypeH5;
-            break;
-            
-        default:
-            break;
-    }
-    return openType;
-}
 
--(AlibcNativeFailMode )NativeFailMode{
-    AlibcNativeFailMode openType=AlibcNativeFailModeJumpH5;
-    switch ([ALiTradeSDKShareParam sharedInstance].NativeFailMode) {
-            case 0:
-            openType=AlibcNativeFailModeJumpH5;
-            break;
-            case 1:
-            openType=AlibcNativeFailModeJumpDownloadPage;
-            break;
-            case 2:
-            openType=AlibcNativeFailModeJumpBrowser;
-            break;
-            case 3:
-            openType=AlibcNativeFailModeNone;
-            break;
-        default:
-            break;
-    }
-    return openType;
-    
-}
 
--(NSString*)schemeType{
-    NSString*  linkKey=@"tmall_scheme";
-    switch ([ALiTradeSDKShareParam sharedInstance].linkKey) {
-            case 0:
-            linkKey=@"taobao_scheme";
-            break;
-            case 1:
-            linkKey=@"tmall_scheme";
-            break;
-        default:
-            break;
-    }
-    return linkKey;
-    
-}
-
--(AlibcTradeTaokeParams*)taokeParam{
-    if ([ALiTradeSDKShareParam sharedInstance].isUseTaokeParam) {
-        AlibcTradeTaokeParams *taoke = [[AlibcTradeTaokeParams alloc] init];
-        taoke.pid =[[ALiTradeSDKShareParam sharedInstance].taoKeParams objectForKey:@"pid"];
-        taoke.subPid = [[ALiTradeSDKShareParam sharedInstance].taoKeParams objectForKey:@"subPid"];
-        taoke.unionId = [[ALiTradeSDKShareParam sharedInstance].taoKeParams objectForKey:@"unionId"];
-        taoke.adzoneId = [[ALiTradeSDKShareParam sharedInstance].taoKeParams objectForKey:@"adzoneId"];
-        taoke.extParams = [[ALiTradeSDKShareParam sharedInstance].taoKeParams objectForKey:@"extParams"];
-        return taoke;
-    } else {
-        return nil;
-    }
-    
-}
-
--(NSDictionary *)customParam{
-    NSDictionary *customParam=[NSDictionary dictionaryWithDictionary:[ALiTradeSDKShareParam sharedInstance].customParams];
-    return customParam;
-    
-}
 @end

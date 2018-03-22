@@ -17,7 +17,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.view.backgroundColor=[UIColor colorWithHexString:@"f5f5f5"];
+    self.view.backgroundColor=[UIColor whiteColor];
     
     if ([self respondsToSelector:@selector(edgesForExtendedLayout)])
     {

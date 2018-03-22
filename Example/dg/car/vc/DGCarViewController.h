@@ -6,8 +6,8 @@
 //  Copyright © 2018年 272789124@qq.com. All rights reserved.
 //
 
-#import "WZViewController.h"
+#import "ALiTradeWebViewController.h"
 
-@interface DGCarViewController : WZViewController
+@interface DGCarViewController : ALiTradeWebViewController
 
 @end

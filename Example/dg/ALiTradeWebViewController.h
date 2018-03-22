@@ -6,16 +6,12 @@
 //  Copyright © 2016年 alibaba. All rights reserved.
 //
 
-#ifndef ALiTradeWantViewController_h
-#define ALiTradeWantViewController_h
-
 #import <UIKit/UIKit.h>
+
 @interface ALiTradeWebViewController : UIViewController<UIWebViewDelegate, NSURLConnectionDelegate>
 @property (nonatomic, copy) NSString *openUrl;
 @property (strong, nonatomic) UIWebView *webView;
 
--(UIWebView *)getWebView;
-
 @end
 
-#endif /* ALiTradeWantViewController_h */
+

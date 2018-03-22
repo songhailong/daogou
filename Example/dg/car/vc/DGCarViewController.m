@@ -7,8 +7,14 @@
 //
 
 #import "DGCarViewController.h"
+#import "DGGlobalConfig.h"
 
 @interface DGCarViewController ()
+
+@property (nonatomic,strong) ALiTradeWebViewController* childVC;
+
+@property (nonatomic, strong) AlibcTradeProcessSuccessCallback onTradeSuccess;
+@property (nonatomic, strong) AlibcTradeProcessFailedCallback onTradeFailure;
 
 @end
 
@@ -16,22 +22,31 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    self.view.backgroundColor=[UIColor whiteColor];
+    self.navigationItem.title=@"购物车";
+    [self openCar];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
+- (void)openCar {
 
-/*
-#pragma mark - Navigation
+    id<AlibcTradePage> page = [AlibcTradePageFactory myCartsPage];
+    
+    AlibcTradeShowParams* showParam = [[AlibcTradeShowParams alloc] init];
+    showParam.openType = [DGGlobalConfig openType];
+    showParam.backUrl=[ALiTradeSDKShareParam sharedInstance].backUrl;
+    showParam.nativeFailMode=[DGGlobalConfig NativeFailMode];
+    showParam.linkKey=[DGGlobalConfig schemeType];
+    
+//    ALiTradeWebViewController* vc = [[ALiTradeWebViewController alloc] init];
+//    self.childVC=vc;
+    NSInteger res = [[AlibcTradeSDK sharedInstance].tradeService show:self webView:self.webView page:page showParams:showParam taoKeParams:[DGGlobalConfig taokeParam] trackParam:[DGGlobalConfig customParam] tradeProcessSuccessCallback:self.onTradeSuccess tradeProcessFailedCallback:self.onTradeFailure];
+    if (res == 1) {
+//        [self.navigationController pushViewController:vc animated:YES];
+       
+        self.webView.backgroundColor=[UIColor whiteColor];
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+    }
 }
-*/
 
 @end

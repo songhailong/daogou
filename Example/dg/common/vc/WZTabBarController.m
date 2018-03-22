@@ -72,7 +72,7 @@
     DGHomeViewController *home = [[DGHomeViewController alloc] init];
     DGBaoyouViewController *baoyou = [[DGBaoyouViewController alloc] init];
     DGSpecialViewController *special = [[DGSpecialViewController alloc] init];
-    DGCarViewController *car = [[DGCarViewController alloc] init];
+    ALiTradeWebViewController *car = [[ALiTradeWebViewController alloc] init];
     DGMyViewController *me = [[DGMyViewController alloc] init];
     
     [self addChildViewItem:home title:@"优惠券" image:@"home_nor" selectImage:@"home_pre"];

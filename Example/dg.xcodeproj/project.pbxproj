@@ -79,6 +79,7 @@
 		F21028E2206276FC0039F71E /* DGSpecialListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F21028E1206276FC0039F71E /* DGSpecialListViewController.m */; };
 		F21028E620627C270039F71E /* CCSearchHeaderButtonView.m in Sources */ = {isa = PBXBuildFile; fileRef = F21028E420627C270039F71E /* CCSearchHeaderButtonView.m */; };
 		F21028E720627C270039F71E /* CCSearchHeaderButtonView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F21028E520627C270039F71E /* CCSearchHeaderButtonView.xib */; };
+		F21028EA2063AAAB0039F71E /* DGGlobalConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = F21028E92063AAAB0039F71E /* DGGlobalConfig.m */; };
 		F224E97420594AF000C92206 /* MyAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = F224E97220594AF000C92206 /* MyAlertView.m */; };
 		F224E97620594B8E00C92206 /* yw_1222.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F224E97520594B8E00C92206 /* yw_1222.jpg */; };
 		F224E9792059519A00C92206 /* ALiTradeSDKShareParam.m in Sources */ = {isa = PBXBuildFile; fileRef = F224E9772059519900C92206 /* ALiTradeSDKShareParam.m */; };
@@ -230,6 +231,8 @@
 		F21028E320627C270039F71E /* CCSearchHeaderButtonView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCSearchHeaderButtonView.h; sourceTree = "<group>"; };
 		F21028E420627C270039F71E /* CCSearchHeaderButtonView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCSearchHeaderButtonView.m; sourceTree = "<group>"; };
 		F21028E520627C270039F71E /* CCSearchHeaderButtonView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CCSearchHeaderButtonView.xib; sourceTree = "<group>"; };
+		F21028E82063AAAB0039F71E /* DGGlobalConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DGGlobalConfig.h; sourceTree = "<group>"; };
+		F21028E92063AAAB0039F71E /* DGGlobalConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DGGlobalConfig.m; sourceTree = "<group>"; };
 		F224E97220594AF000C92206 /* MyAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyAlertView.m; sourceTree = "<group>"; };
 		F224E97320594AF000C92206 /* MyAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyAlertView.h; sourceTree = "<group>"; };
 		F224E97520594B8E00C92206 /* yw_1222.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = yw_1222.jpg; sourceTree = "<group>"; };
@@ -435,6 +438,8 @@
 		F210281420622F110039F71E /* model */ = {
 			isa = PBXGroup;
 			children = (
+				F21028E82063AAAB0039F71E /* DGGlobalConfig.h */,
+				F21028E92063AAAB0039F71E /* DGGlobalConfig.m */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -761,6 +766,7 @@
 				TargetAttributes = {
 					6003F589195388D20070C39A = {
 						DevelopmentTeam = YZ264KY5WM;
+						ProvisioningStyle = Automatic;
 					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
@@ -933,6 +939,7 @@
 				F21028B52062403E0039F71E /* DGListViewController.m in Sources */,
 				F21028D1206268370039F71E /* DG99BaoyouViewController.m in Sources */,
 				F21028D420626E700039F71E /* DGSpecialViewController.m in Sources */,
+				F21028EA2063AAAB0039F71E /* DGGlobalConfig.m in Sources */,
 				F210282820622F6B0039F71E /* WZNavigationController.m in Sources */,
 				F21028AB2062350D0039F71E /* CCBridgeModule.m in Sources */,
 				F210289B2062350D0039F71E /* WZPush.m in Sources */,
@@ -1024,6 +1031,7 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: desheng li (8RJCNV8BA3)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_TESTABILITY = YES;
@@ -1041,8 +1049,9 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "f74e6a1f-16f1-4a77-9ae4-1685b4d6182f";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -1064,7 +1073,8 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -1074,7 +1084,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				PROVISIONING_PROFILE = "f74e6a1f-16f1-4a77-9ae4-1685b4d6182f";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -1086,6 +1097,9 @@
 			baseConfigurationReference = D3DE213528D4B94EFA42D012 /* Pods-dg_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: wuchen@cityym.com (56YV865TKB)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YZ264KY5WM;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -1102,6 +1116,8 @@
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = com.chechengshe.wyjiakao;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
@@ -1112,6 +1128,9 @@
 			baseConfigurationReference = 171F5A568A50C9D0612F36A2 /* Pods-dg_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YZ264KY5WM;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -1128,6 +1147,8 @@
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = com.chechengshe.wyjiakao;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
