@@ -1,0 +1,21 @@
+gradle3.0.0 - >2.3.3
+1 全局build.gradle修改
+2 app之build.gradle修改
+  compileSdkVersion 26
+  buildToolsVersion "26.0.2"
+  
+  compile
+  testCompile
+  androidTestCompile
+
+  androidTestCompile 'com.android.support:support-annotations:26.1.0'
+   
+  aar引入方式
+  compile(name: 'alibc_link_partner-1.1.0.0', ext: 'aar')
+
+
+4 获取安全图片：应用名称和你填写的申请应用名称一样就可以
+有人说gradle版本更改为gradle:2.3.0，可是改完一堆的不兼容性
+签名 用android默认的 rsa算法 不要用dsa
+gradle版本是classpath 'com.android.tools.build:gradle:3.0.0-alpha9'  ？使用2.3.3的gradle版本
+问题解决了，原来是签名没有打进去！android studio 的 2.3 和之前版本不一样！打包的时候有V1 和V2 两个复选框，需要都选上才能签名成功！

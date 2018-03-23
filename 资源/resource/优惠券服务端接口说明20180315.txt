@@ -1,0 +1,192 @@
+  UTF8
+  tokenKey:wuchen2018tbk
+
+  app_key:24774497
+  app_secret:00090f9f04f9b6dca52ae34a3dd9bd97
+  app_adzoneId:200404293
+  Pid:mm_127970548_41976151_200404293
+
+一 获取优惠券（按模块、分类、页数）
+1.1 URL
+http://112.29.171.12:8080/yhq/coupon.get.action?module=m1&pager=1&type=IOS&token=ae608df58b70c39e3ea5ddccd0d97897
+http://112.29.171.12:8080/yhq/coupon.get.action?module=m1&pager=1&token=ae608df58b70c39e3ea5ddccd0d97897&type=IOS
+1.2 参数说明
+   module:模块  m1-优惠券  m2-9.9 m3-特惠
+   cat:   分类 
+        c1-女装
+		c2-美妆
+		c3-鞋包
+		c4-内衣
+		c5-男装
+		c6-配饰
+		c7-运动户外
+		c8-母婴
+		c9-食品
+		c10-数码
+		c11-家居
+   pager: 页码 >=1的数字
+   type: 手机类型(IOS,Android,Other)
+   token: 32位MD5加密串(module+cat+pager+type+tokenKey,cat可以赋空值)
+1.3 返回json
+{"coupon":{"couponNum":1,
+           "currentPage":1,"pageNum":1,
+           "coupons":[{"couponClickUrl":"https://uland.taobao.com/coupon/edetail?e=ZdN7o5uKeg0GQASttHIRqbY%2BQ05HsBs6xj2pUsjZfPdHqkvvB8kAoICD1R2JeSgvV8e%2BhRZkpn9kstcs%2Bmk1%2F79fwBwwUiqlKkZSIP8ySH6t4Otvvn9rGPSs4zOlZ4se",
+           "couponEndTime":"2018-03-05","couponInfo":"满21元减20元","couponLessHours":7,"couponRemainCount":2670,"couponStartTime":"2018-02-24","couponTotalCount":5000,
+           "couponValue":20,"prdtId":558913624515,"prdtImgUrl":"https://img.alicdn.com/tfscom/i2/3372095646/TB1dHpGboR1BeNjy0FmXXb0wVXa_!!2-item_pic.png","prdtName":"Wilson威尔胜运动内衣女防震聚拢速干双肩胸衣瑜伽背心式健身文胸","prdtPrice":139.00}]
+          }
+          ,"errorCode":"0","errorMsg":"success"}
+{"errorCode":"0","errorMsg":"success"}
+
+1.4 返回代码说明
+	0 success
+	1 param module is null
+	2 param pager is null
+	3 param pager is not int
+	4 param pager less than 1
+	5 param type is null or not right
+	6 param token is null
+	7 param token is not right
+	  token=md5 32 (module+cat+pager+type+tokenKey)
+	8 result is none
+
+1.5 优惠券字段说明
+    prdtId           商品ID
+    prdtImgUrl       商品图片URL
+    prdtName         商品名称（可能会很长）
+    prdtPrice        商品价格
+    couponInfo       优惠券说明
+    couponValue      优惠券金额
+    couponClickUrl   点击链接
+    couponStartTime  开始日期
+    couponEndTime    结束日期
+    couponLessHours  剩余小时数
+    couponTotalCount 优惠券总数
+    couponRemainCount优惠券剩余数量
+     
+二 搜索优惠券（按关键词)
+2.1 url:http://112.29.171.12:8080/yhq/coupon.search.action?keywords=\u8FDE\u8863\u88D9&pager=1&type=IOS&token=501361acf9ae58e28b910d10befff4a0
+2.2 参数说明
+   keywords:搜索关键字
+   pager: 页码 >=1的数字
+   type: 手机类型(IOS,Android,Other)
+   token: 32位MD5加密串(pager+tokenKey)
+2.3 返回json
+{"coupon":{"couponNum":1,
+           "currentPage":1,"pageNum":1,
+           "coupons":[{"couponClickUrl":"https://uland.taobao.com/coupon/edetail?e=ZdN7o5uKeg0GQASttHIRqbY%2BQ05HsBs6xj2pUsjZfPdHqkvvB8kAoICD1R2JeSgvV8e%2BhRZkpn9kstcs%2Bmk1%2F79fwBwwUiqlKkZSIP8ySH6t4Otvvn9rGPSs4zOlZ4se",
+           "couponEndTime":"2018-03-05","couponInfo":"满21元减20元","couponLessHours":7,"couponRemainCount":2670,"couponStartTime":"2018-02-24","couponTotalCount":5000,
+           "couponValue":20,"prdtId":558913624515,"prdtImgUrl":"https://img.alicdn.com/tfscom/i2/3372095646/TB1dHpGboR1BeNjy0FmXXb0wVXa_!!2-item_pic.png","prdtName":"Wilson威尔胜运动内衣女防震聚拢速干双肩胸衣瑜伽背心式健身文胸","prdtPrice":139.00}]
+          }
+          ,"errorCode":"0","errorMsg":"success"}
+{"errorCode":"0","errorMsg":"success"}
+2.4 返回代码说明
+	0 success
+	1 param keywords is null
+	2 param pager is null
+	3 param pager is not int
+	4 param pager less than 1
+	5 param type is null or not right
+	6 param token is null
+	7 param token is not right
+	  token=md5 32 (pager+type+tokenKey)
+	8 result is none
+
+1.5 优惠券字段说明
+    prdtId           商品ID
+    prdtImgUrl       商品图片URL
+    prdtName         商品名称（可能会很长）
+    prdtPrice        商品价格
+    couponInfo       优惠券说明
+    couponValue      优惠券金额
+    couponClickUrl   点击链接
+    couponStartTime  开始日期
+    couponEndTime    结束日期
+    couponLessHours  剩余小时数
+    couponTotalCount 优惠券总数
+    couponRemainCount优惠券剩余数量
+    
+三 提交用户手机信息
+2.1 url:http://112.29.171.12:8080/yhq/cust.submit.action?imei=123123adasfasdfdfsa&type=IOS&token=ea15689696fced83f96aeab8dc9cd932
+2.2 参数说明
+   imei: 手机唯一码
+   type: 手机类型(IOS,Android,Other)
+   token: 32位MD5加密串(imei+tokenKey)
+2.3 返回json
+{"errorCode":"0","errorMsg":"success"}
+2.4 返回代码说明
+	0 success
+	1 param imei is null
+	2 param type is null
+	5 param token is null
+	6 param token is not right
+	  token=md5 32 (imei+tokenKey)
+	8 error on save to databse
+
+四 提交用户推荐码
+2.1 url:http://112.29.171.12:8080/yhq/invitcode.submit.action??imei=123123adasfasdfdfsa&type=IOS&code=123123&token=5fe89f7881f82b446f112bf5c1f0f2fc
+2.2 参数说明
+   imei: 手机唯一码
+   type: 手机类型(IOS,Android,Other)
+   code: 推荐码
+   token: 32位MD5加密串(imei+code+tokenKey)
+2.3 返回json
+{"errorCode":"0","errorMsg":"success"}
+2.4 返回代码说明
+	0 success
+	1 param imei is null
+	2 param type is null
+	3 param code is null
+	5 param token is null
+	6 param token is not right
+	  token=md5 32 (imei+code+tokenKey)
+	8 error on save to databse
+	
+五 提交淘宝账户
+2.1 url:http://112.29.171.12:8080/yhq/tbaccount.submit.action?imei=123123adasfasdfdfsa&type=IOS&tbaccount=12@123.com&tbname=lee&token=7f14845027dbf8070d850f1523984307
+2.2 参数说明
+   imei: 手机唯一码
+   type: 手机类型(IOS,Android,Other)
+   tbaccount: 淘宝账户
+   tbname: 淘宝用户名称
+   token: 32位MD5加密串(imei+tbaccount+tbname+tokenKey)
+2.3 返回json
+{"errorCode":"0","errorMsg":"success"}
+2.4 返回代码说明
+	0 success
+	1 param imei is null
+	2 param type is null
+	3 param tbaccount is null
+	3 param tbname is null
+	5 param token is null
+	6 param token is not right
+	  token=md5 32 (imei+tbaccount+tbname+tokenKey)
+	8 error on save to databse
+	
+六 获取用户推荐码
+2.1 url:http://112.29.171.12:8080/yhq/invitcode.get.action?imei=123123adasfasdfdfsa&type=IOS&token=ea15689696fced83f96aeab8dc9cd932
+2.2 参数说明
+   imei: 手机唯一码
+   type: 手机类型(IOS,Android,Other)
+   token: 32位MD5加密串(imei+tokenKey)
+2.3 返回json
+{"code":"123123","errorCode":"0","errorMsg":"success"}
+2.4 返回代码说明
+	0 success
+	1 param imei is null
+	2 param type is null
+	5 param token is null
+	6 param token is not right
+	  token=md5 32 (imei+tokenKey)
+
+
+http://112.29.171.12:8080/yhq/coupon.get.action?module=m1&pager=1&type=IOS&token=ae608df58b70c39e3ea5ddccd0d97897
+
+http://112.29.171.12:8080/yhq/coupon.search.action?keywords=\u8FDE\u8863\u88D9&pager=1&type=IOS&token=501361acf9ae58e28b910d10befff4a0
+
+http://112.29.171.12:8080/yhq/cust.submit.action?imei=123123adasfasdfdfsa&type=IOS&token=ea15689696fced83f96aeab8dc9cd932
+
+http://112.29.171.12:8080/yhq/invitcode.submit.action?imei=123123adasfasdfdfsa&type=IOS&code=123123&token=5fe89f7881f82b446f112bf5c1f0f2fc
+
+http://112.29.171.12:8080/yhq/tbaccount.submit.action?imei=123123adasfasdfdfsa&type=IOS&tbaccount=12@123.com&tbname=lee&token=7f14845027dbf8070d850f1523984307
+
+http://112.29.171.12:8080/yhq/invitcode.get.action?imei=123123adasfasdfdfsa&type=IOS&token=ea15689696fced83f96aeab8dc9cd932
