@@ -35,13 +35,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "dg/DGAppDelegate.m"
-            timestampString = "543408808.1917911"
+            filePath = "dg/DGViewController.m"
+            timestampString = "543759932.463424"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "29"
-            endingLineNumber = "29"
-            landmarkName = "-application:"
+            startingLineNumber = "88"
+            endingLineNumber = "88"
+            landmarkName = "-OpenByPage:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

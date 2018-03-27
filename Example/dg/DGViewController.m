@@ -118,5 +118,39 @@
 }
 
 
+- (void)OpenByPage2:(id<AlibcTradePage>)page
+{
+    AlibcTradeShowParams* showParam = [[AlibcTradeShowParams alloc] init];
+    showParam.openType = [DGGlobalConfig openType];
+    //    showParam.backUrl=@"tbopen23082328:https://h5.m.taobao.com";
+    
+    showParam.backUrl=[ALiTradeSDKShareParam sharedInstance].backUrl;
+    BOOL isNeedPush=[ALiTradeSDKShareParam sharedInstance].isNeedPush;
+    BOOL isBindWebview=[ALiTradeSDKShareParam sharedInstance].isBindWebview;
+    showParam.isNeedPush=isNeedPush;
+    showParam.nativeFailMode=[DGGlobalConfig NativeFailMode];
+    
+    //    showParam.linkKey = @"tmall_scheme";//暂时拉起天猫
+    showParam.linkKey=[DGGlobalConfig schemeType];
+    //    showParam.linkKey = @"dingding_scheme";//暂时拉起天猫
+    
+    if (!isBindWebview) {
+        
+        ALiTradeWebViewController* view = [[ALiTradeWebViewController alloc] init];
+        NSInteger res = [[AlibcTradeSDK sharedInstance].tradeService show:view webView:view.webView page:page showParams:showParam taoKeParams:[DGGlobalConfig taokeParam] trackParam:[DGGlobalConfig customParam] tradeProcessSuccessCallback:self.onTradeSuccess tradeProcessFailedCallback:self.onTradeFailure];
+        if (res == 1) {
+            [self.navigationController pushViewController:view animated:YES];
+        }
+    } else {
+        if (!isNeedPush) {
+            [[AlibcTradeSDK sharedInstance].tradeService show:self.navigationController page:page showParams:showParam taoKeParams:[DGGlobalConfig taokeParam] trackParam:[DGGlobalConfig customParam] tradeProcessSuccessCallback:self.onTradeSuccess tradeProcessFailedCallback: self.onTradeFailure];
+        } else {
+            [[AlibcTradeSDK sharedInstance].tradeService show:self page:page showParams:showParam taoKeParams:[DGGlobalConfig taokeParam] trackParam:[DGGlobalConfig customParam] tradeProcessSuccessCallback:self.onTradeSuccess tradeProcessFailedCallback: self.onTradeFailure];
+        }
+        
+    }
+}
+
+
 
 @end

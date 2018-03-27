@@ -30,7 +30,7 @@
         self.externParams = [[NSMutableDictionary alloc]initWithObjectsAndKeys:@"taobaoH5", @"_viewType",@"tag1",@"isv_code",@"xxxxxxxxxx",@"ybhpss",nil];
 
         //adzoneid不为空的情况回归
-        self.taoKeParams = [[NSMutableDictionary alloc]initWithObjectsAndKeys:@"mm_100713040_22792955_75330474", @"pid",@"",@"unionId",@"", @"subPid", @"59786713",@"adzoneId",@{@"taokeAppkey":@"23428351"},@"extParams",nil];
+        self.taoKeParams = [[NSMutableDictionary alloc]initWithObjectsAndKeys:@"mm_100713040_22792955_75330474", @"pid",@"",@"unionId",@"", @"subPid", @"59786713",@"adzoneId",@{@"taokeAppkey":@"24823251"},@"extParams",nil];
         self.globalTaoKeParams = [[NSMutableDictionary alloc]initWithObjectsAndKeys:@"mm_100713040_22792955_75330474", @"pid",@"",@"unionId",@"", @"subPid",@"", @"adzoneId",nil];
  
  /*
@@ -39,7 +39,7 @@
         self.globalTaoKeParams = [[NSMutableDictionary alloc]initWithObjectsAndKeys:@"mm_100713040_22792955_75330474", @"pid",@"",@"unionId",@"",@"subPid",nil];
    */
   
-        self.backUrl=@"tbopen23428351";
+        self.backUrl=@"tbopen24823251";
         self.openType=0;
         self.linkKey=0;
         self.isNeedPush=NO;

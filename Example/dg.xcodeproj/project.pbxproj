@@ -84,6 +84,10 @@
 		F224E97620594B8E00C92206 /* yw_1222.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F224E97520594B8E00C92206 /* yw_1222.jpg */; };
 		F224E9792059519A00C92206 /* ALiTradeSDKShareParam.m in Sources */ = {isa = PBXBuildFile; fileRef = F224E9772059519900C92206 /* ALiTradeSDKShareParam.m */; };
 		F224E97C205951E500C92206 /* ALiTradeWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F224E97B205951E500C92206 /* ALiTradeWebViewController.m */; };
+		F2E779632069062B00E65319 /* yw_122222.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F2E779622069062B00E65319 /* yw_122222.jpg */; };
+		F2E779652069094700E65319 /* yw_122233.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F2E779642069094700E65319 /* yw_122233.jpg */; };
+		F2E7796820690D6900E65319 /* DGSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2E7796720690D6900E65319 /* DGSearchViewController.m */; };
+		F2E7796B2069136300E65319 /* DGLaunchImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = F2E7796A2069136300E65319 /* DGLaunchImageView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -240,6 +244,12 @@
 		F224E9782059519A00C92206 /* ALiTradeSDKShareParam.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALiTradeSDKShareParam.h; sourceTree = "<group>"; };
 		F224E97A205951E500C92206 /* ALiTradeWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALiTradeWebViewController.h; sourceTree = "<group>"; };
 		F224E97B205951E500C92206 /* ALiTradeWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALiTradeWebViewController.m; sourceTree = "<group>"; };
+		F2E779622069062B00E65319 /* yw_122222.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = yw_122222.jpg; sourceTree = "<group>"; };
+		F2E779642069094700E65319 /* yw_122233.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = yw_122233.jpg; sourceTree = "<group>"; };
+		F2E7796620690D6900E65319 /* DGSearchViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DGSearchViewController.h; sourceTree = "<group>"; };
+		F2E7796720690D6900E65319 /* DGSearchViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DGSearchViewController.m; sourceTree = "<group>"; };
+		F2E779692069136300E65319 /* DGLaunchImageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DGLaunchImageView.h; sourceTree = "<group>"; };
+		F2E7796A2069136300E65319 /* DGLaunchImageView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DGLaunchImageView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -325,6 +335,8 @@
 				F224E9782059519A00C92206 /* ALiTradeSDKShareParam.h */,
 				F224E9772059519900C92206 /* ALiTradeSDKShareParam.m */,
 				F224E97520594B8E00C92206 /* yw_1222.jpg */,
+				F2E779622069062B00E65319 /* yw_122222.jpg */,
+				F2E779642069094700E65319 /* yw_122233.jpg */,
 				F224E97320594AF000C92206 /* MyAlertView.h */,
 				F224E97220594AF000C92206 /* MyAlertView.m */,
 				6003F59C195388D20070C39A /* DGAppDelegate.h */,
@@ -335,6 +347,8 @@
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
+				F2E779692069136300E65319 /* DGLaunchImageView.h */,
+				F2E7796A2069136300E65319 /* DGLaunchImageView.m */,
 			);
 			name = "Example for dg";
 			path = dg;
@@ -406,6 +420,8 @@
 				F210282D2062336B0039F71E /* DGHomeViewController.m */,
 				F21028B32062403E0039F71E /* DGListViewController.h */,
 				F21028B42062403E0039F71E /* DGListViewController.m */,
+				F2E7796620690D6900E65319 /* DGSearchViewController.h */,
+				F2E7796720690D6900E65319 /* DGSearchViewController.m */,
 			);
 			path = vc;
 			sourceTree = "<group>";
@@ -798,8 +814,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				F21028AE2062350D0039F71E /* SASharePanel.xib in Resources */,
+				F2E779632069062B00E65319 /* yw_122222.jpg in Resources */,
 				F21028932062350D0039F71E /* WZTableViewCell.xib in Resources */,
 				F21028912062350D0039F71E /* WZEmptyView.xib in Resources */,
+				F2E779652069094700E65319 /* yw_122233.jpg in Resources */,
 				F21028DC20626FA70039F71E /* DGMyViewController.xib in Resources */,
 				F21028BE2062448F0039F71E /* DGHomeListTableViewCell.xib in Resources */,
 				F21028E720627C270039F71E /* CCSearchHeaderButtonView.xib in Resources */,
@@ -916,6 +934,7 @@
 				F21028972062350D0039F71E /* WZCollectionReusableModel.m in Sources */,
 				F210289D2062350D0039F71E /* WZRequestModel.m in Sources */,
 				F210282E2062336B0039F71E /* DGHomeViewController.m in Sources */,
+				F2E7796820690D6900E65319 /* DGSearchViewController.m in Sources */,
 				F210282320622F6B0039F71E /* WZViewController.m in Sources */,
 				F21028AC2062350D0039F71E /* CCWXShare.m in Sources */,
 				F21028A62062350D0039F71E /* UIView+WZXibView.m in Sources */,
@@ -949,6 +968,7 @@
 				F21028E2206276FC0039F71E /* DGSpecialListViewController.m in Sources */,
 				F224E9792059519A00C92206 /* ALiTradeSDKShareParam.m in Sources */,
 				F210288E2062350D0039F71E /* WZCollectionReusableView.m in Sources */,
+				F2E7796B2069136300E65319 /* DGLaunchImageView.m in Sources */,
 				F210282620622F6B0039F71E /* WZCollectionViewController.m in Sources */,
 				F21028A22062350D0039F71E /* NSString+WZFormat.m in Sources */,
 				F21028E620627C270039F71E /* CCSearchHeaderButtonView.m in Sources */,

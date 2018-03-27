@@ -118,7 +118,12 @@ static NSString * const clientKey = @"ebf4c30a0d6142859c7dd33652f9ef54";
         param=[NSMutableDictionary new];
     }
     param[@"type"]=@"IOS";
-    NSString *signString = [self signString:param];
+    NSString *signString =nil;
+    if ([URLString containsString:yhqcouponsearchaction]) {
+        signString = [self signStringSearch:param];
+    }else{
+        signString= [self signString:param];
+    }
     param[@"token"] = [signString md5String];
     
     
@@ -185,6 +190,18 @@ static NSString * const clientKey = @"ebf4c30a0d6142859c7dd33652f9ef54";
     
     
     
+}
+
++(NSString *)signStringSearch:(NSDictionary *)dict{
+    //  token: 32位MD5加密串(module+cat+pager+type+tokenKey,cat可以赋空值)
+    NSString *paramString=@"";
+    
+    
+    paramString=[paramString stringByAppendingString:dict[@"pager"]];
+    paramString=[paramString stringByAppendingString:dict[@"type"]];
+    paramString=[paramString stringByAppendingString:@"wuchen2018tbk"];
+    
+    return paramString;
 }
 
 +(NSString *)signString:(NSDictionary *)dict{

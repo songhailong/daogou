@@ -20,7 +20,7 @@
                     <rect key="frame" x="15" y="0.0" width="323" height="48"/>
                     <nil key="textColor"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <textInputTraits key="textInputTraits"/>
+                    <textInputTraits key="textInputTraits" returnKeyType="search"/>
                 </textField>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aka-My-QwA">
                     <rect key="frame" x="338" y="9" width="50" height="30"/>
@@ -29,6 +29,9 @@
                         <constraint firstAttribute="width" constant="50" id="Qxb-M7-qZH"/>
                     </constraints>
                     <state key="normal" image="ic_search"/>
+                    <connections>
+                        <action selector="btnClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="wcx-Wu-RTt"/>
+                    </connections>
                 </button>
             </subviews>
             <constraints>

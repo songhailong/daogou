@@ -35,7 +35,7 @@
     [self.image sd_setImageWithURL:[NSURL URLWithString:model.prdtImgUrl] placeholderImage:nil];
     self.titleLabel.text=model.prdtName;
     self.totalLabel.text=@(model.couponRemainCount).stringValue;
-    self.priceLabel.text=[NSString stringWithFormat:@"%.2f",model.prdtPrice];
+    self.priceLabel.text=[NSString stringWithFormat:@"%.2f",model.prdtPrice-model.couponValue];
     self.marketLabel.text=[NSString stringWithFormat:@"%.2f",model.prdtPrice];
     
 }

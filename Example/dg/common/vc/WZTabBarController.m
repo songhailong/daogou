@@ -78,8 +78,8 @@
     [self addChildViewItem:home title:@"优惠券" image:@"home_nor" selectImage:@"home_pre"];
     [self addChildViewItem:baoyou title:@"9.9包邮" image:@"zhangben_nor" selectImage:@"zhangben_pre"];
     [self addChildViewItem:special title:@"特惠" image:@"mine_nor" selectImage:@"mine_pre"];
-    [self addChildViewItem:car title:@"购物车" image:@"mine_nor" selectImage:@"mine_pre"];
-    [self addChildViewItem:me title:@"我的" image:@"mine_nor" selectImage:@"mine_pre"];
+   // [self addChildViewItem:car title:@"购物车" image:@"mine_nor" selectImage:@"mine_pre"];
+   // [self addChildViewItem:me title:@"我的" image:@"mine_nor" selectImage:@"mine_pre"];
 }
 
 -(void) addChildViewItem:(UIViewController *)curItem title:(NSString *)title image:(NSString *)image selectImage:(NSString *) selectImage{

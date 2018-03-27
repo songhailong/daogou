@@ -17,6 +17,7 @@
 //Account==============================
 //登录 获取验证码
 #define yhqcoupongetaction kMobileAPIFormat_M(@"/yhq/coupon.get.action")
+#define yhqcouponsearchaction kMobileAPIFormat_M(@"/yhq/coupon.search.action")
 
 
 #endif /* WZUrl_h */

@@ -7,7 +7,8 @@
 //
 
 #import "DGGlobalConfig.h"
-
+//24823251
+//24834213
 @implementation DGGlobalConfig
 
 +(NSDictionary *)customParam{
@@ -87,7 +88,7 @@
         default:
             break;
     }
-    openType=AlibcOpenTypeH5;
+    openType=AlibcOpenTypeNative;
     return openType;
 }
 @end
