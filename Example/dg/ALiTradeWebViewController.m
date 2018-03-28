@@ -36,7 +36,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.navigationItem.title=@"购物车";
+//    self.navigationItem.title=@"购物车";
 //    self.fd_prefersNavigationBarHidden=YES;
     _webView = [[UIWebView alloc]initWithFrame:self.view.bounds];
     _webView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
@@ -61,23 +61,23 @@
 
 - (void)openCar {
     
-    id<AlibcTradePage> page = [AlibcTradePageFactory myCartsPage];
-    
-    AlibcTradeShowParams* showParam = [[AlibcTradeShowParams alloc] init];
-    showParam.openType = [DGGlobalConfig openType];
-    showParam.backUrl=[ALiTradeSDKShareParam sharedInstance].backUrl;
-    showParam.nativeFailMode=[DGGlobalConfig NativeFailMode];
-    showParam.linkKey=[DGGlobalConfig schemeType];
-    
-    //    ALiTradeWebViewController* vc = [[ALiTradeWebViewController alloc] init];
-    //    self.childVC=vc;
-    NSInteger res = [[AlibcTradeSDK sharedInstance].tradeService show:self webView:self.webView page:page showParams:showParam taoKeParams:[DGGlobalConfig taokeParam] trackParam:[DGGlobalConfig customParam] tradeProcessSuccessCallback:self.onTradeSuccess tradeProcessFailedCallback:self.onTradeFailure];
-    if (res == 1) {
-        //        [self.navigationController pushViewController:vc animated:YES];
-        
-//        self.webView.backgroundColor=[UIColor whiteColor];
-        
-    }
+//    id<AlibcTradePage> page = [AlibcTradePageFactory myCartsPage];
+//    
+//    AlibcTradeShowParams* showParam = [[AlibcTradeShowParams alloc] init];
+//    showParam.openType = [DGGlobalConfig openType];
+//    showParam.backUrl=[ALiTradeSDKShareParam sharedInstance].backUrl;
+//    showParam.nativeFailMode=[DGGlobalConfig NativeFailMode];
+//    showParam.linkKey=[DGGlobalConfig schemeType];
+//    
+//    //    ALiTradeWebViewController* vc = [[ALiTradeWebViewController alloc] init];
+//    //    self.childVC=vc;
+//    NSInteger res = [[AlibcTradeSDK sharedInstance].tradeService show:self webView:self.webView page:page showParams:showParam taoKeParams:[DGGlobalConfig taokeParam] trackParam:[DGGlobalConfig customParam] tradeProcessSuccessCallback:self.onTradeSuccess tradeProcessFailedCallback:self.onTradeFailure];
+//    if (res == 1) {
+//        //        [self.navigationController pushViewController:vc animated:YES];
+//        
+////        self.webView.backgroundColor=[UIColor whiteColor];
+//        
+//    }
 }
 
 

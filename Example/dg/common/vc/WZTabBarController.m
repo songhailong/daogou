@@ -10,7 +10,7 @@
 #import "WZNavigationController.h"
 #import <commonLib/UIImage+Utility.h>
 #import <commonLib/UIColor+HexString.h>
-
+#import <commonLib/UIImage+FontAwesome.h>
 #import "DGHomeViewController.h"
 #import "DG99BaoyouViewController.h"
 #import "DGSpecialViewController.h"
@@ -72,14 +72,16 @@
     DGHomeViewController *home = [[DGHomeViewController alloc] init];
     DGBaoyouViewController *baoyou = [[DGBaoyouViewController alloc] init];
     DGSpecialViewController *special = [[DGSpecialViewController alloc] init];
-    ALiTradeWebViewController *car = [[ALiTradeWebViewController alloc] init];
+    DGCarViewController *car = [[DGCarViewController alloc] init];
     DGMyViewController *me = [[DGMyViewController alloc] init];
     
-    [self addChildViewItem:home title:@"优惠券" image:@"home_nor" selectImage:@"home_pre"];
-    [self addChildViewItem:baoyou title:@"9.9包邮" image:@"zhangben_nor" selectImage:@"zhangben_pre"];
-    [self addChildViewItem:special title:@"特惠" image:@"mine_nor" selectImage:@"mine_pre"];
-   // [self addChildViewItem:car title:@"购物车" image:@"mine_nor" selectImage:@"mine_pre"];
-   // [self addChildViewItem:me title:@"我的" image:@"mine_nor" selectImage:@"mine_pre"];
+    
+    
+    [self addChildViewItem:home title:@"优惠券" image:@"coupon_nor" selectImage:@"coupon_pre"];
+    [self addChildViewItem:baoyou title:@"9.9包邮" image:@"free_nor" selectImage:@"free_pre"];
+    [self addChildViewItem:special title:@"特惠" image:@"special_nor" selectImage:@"special_pre"];
+    [self addChildViewItem:car title:@"购物车" image:@"car_pre" selectImage:@"car_nor"];
+    [self addChildViewItem:me title:@"我的" image:@"customer_nor" selectImage:@"customer_pre"];
 }
 
 -(void) addChildViewItem:(UIViewController *)curItem title:(NSString *)title image:(NSString *)image selectImage:(NSString *) selectImage{

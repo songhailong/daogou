@@ -10,4 +10,6 @@
 
 @interface WZTableViewController : RefreshTableViewController
 
+@property(nonatomic,assign) NSInteger page;
+
 @end

@@ -80,14 +80,25 @@
 		F21028E620627C270039F71E /* CCSearchHeaderButtonView.m in Sources */ = {isa = PBXBuildFile; fileRef = F21028E420627C270039F71E /* CCSearchHeaderButtonView.m */; };
 		F21028E720627C270039F71E /* CCSearchHeaderButtonView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F21028E520627C270039F71E /* CCSearchHeaderButtonView.xib */; };
 		F21028EA2063AAAB0039F71E /* DGGlobalConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = F21028E92063AAAB0039F71E /* DGGlobalConfig.m */; };
+		F21D6616206B86DA0026969A /* DGSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F21D6614206B86DA0026969A /* DGSettingViewController.m */; };
+		F21D6617206B86DA0026969A /* DGSettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F21D6615206B86DA0026969A /* DGSettingViewController.xib */; };
+		F21D662A206B87740026969A /* WZCustomerSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F21D661F206B87740026969A /* WZCustomerSettingViewController.m */; };
+		F21D662B206B87740026969A /* WZSettingImportantViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F21D6621206B87740026969A /* WZSettingImportantViewController.m */; };
+		F21D662C206B87740026969A /* WZSettingImportantViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F21D6622206B87740026969A /* WZSettingImportantViewController.xib */; };
+		F21D662D206B87740026969A /* WZCustomerSettingItemCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F21D6625206B87740026969A /* WZCustomerSettingItemCellModel.m */; };
+		F21D662E206B87740026969A /* WZCustomerSettingTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F21D6628206B87740026969A /* WZCustomerSettingTableViewCell.m */; };
+		F21D662F206B87740026969A /* WZCustomerSettingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F21D6629206B87740026969A /* WZCustomerSettingTableViewCell.xib */; };
+		F21D6632206B8BC90026969A /* DGMyOrderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F21D6631206B8BC90026969A /* DGMyOrderViewController.m */; };
+		F21D6634206B97640026969A /* carEmptry.xib in Resources */ = {isa = PBXBuildFile; fileRef = F21D6633206B97640026969A /* carEmptry.xib */; };
+		F21D6637206B97790026969A /* carEmptry.m in Sources */ = {isa = PBXBuildFile; fileRef = F21D6636206B97790026969A /* carEmptry.m */; };
 		F224E97420594AF000C92206 /* MyAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = F224E97220594AF000C92206 /* MyAlertView.m */; };
-		F224E97620594B8E00C92206 /* yw_1222.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F224E97520594B8E00C92206 /* yw_1222.jpg */; };
+		F224E97620594B8E00C92206 /* yw_122211.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F224E97520594B8E00C92206 /* yw_122211.jpg */; };
 		F224E9792059519A00C92206 /* ALiTradeSDKShareParam.m in Sources */ = {isa = PBXBuildFile; fileRef = F224E9772059519900C92206 /* ALiTradeSDKShareParam.m */; };
 		F224E97C205951E500C92206 /* ALiTradeWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F224E97B205951E500C92206 /* ALiTradeWebViewController.m */; };
-		F2E779632069062B00E65319 /* yw_122222.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F2E779622069062B00E65319 /* yw_122222.jpg */; };
-		F2E779652069094700E65319 /* yw_122233.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F2E779642069094700E65319 /* yw_122233.jpg */; };
+		F2E779632069062B00E65319 /* yw_1222.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F2E779622069062B00E65319 /* yw_1222.jpg */; };
 		F2E7796820690D6900E65319 /* DGSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2E7796720690D6900E65319 /* DGSearchViewController.m */; };
 		F2E7796B2069136300E65319 /* DGLaunchImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = F2E7796A2069136300E65319 /* DGLaunchImageView.m */; };
+		F2E77977206B430400E65319 /* yw_122233.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F2E77976206B430300E65319 /* yw_122233.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -237,19 +248,37 @@
 		F21028E520627C270039F71E /* CCSearchHeaderButtonView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CCSearchHeaderButtonView.xib; sourceTree = "<group>"; };
 		F21028E82063AAAB0039F71E /* DGGlobalConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DGGlobalConfig.h; sourceTree = "<group>"; };
 		F21028E92063AAAB0039F71E /* DGGlobalConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DGGlobalConfig.m; sourceTree = "<group>"; };
+		F21D6613206B86DA0026969A /* DGSettingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DGSettingViewController.h; sourceTree = "<group>"; };
+		F21D6614206B86DA0026969A /* DGSettingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DGSettingViewController.m; sourceTree = "<group>"; };
+		F21D6615206B86DA0026969A /* DGSettingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DGSettingViewController.xib; sourceTree = "<group>"; };
+		F21D661E206B87740026969A /* WZCustomerSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WZCustomerSettingViewController.h; sourceTree = "<group>"; };
+		F21D661F206B87740026969A /* WZCustomerSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WZCustomerSettingViewController.m; sourceTree = "<group>"; };
+		F21D6620206B87740026969A /* WZSettingImportantViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WZSettingImportantViewController.h; sourceTree = "<group>"; };
+		F21D6621206B87740026969A /* WZSettingImportantViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WZSettingImportantViewController.m; sourceTree = "<group>"; };
+		F21D6622206B87740026969A /* WZSettingImportantViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WZSettingImportantViewController.xib; sourceTree = "<group>"; };
+		F21D6624206B87740026969A /* WZCustomerSettingItemCellModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WZCustomerSettingItemCellModel.h; sourceTree = "<group>"; };
+		F21D6625206B87740026969A /* WZCustomerSettingItemCellModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WZCustomerSettingItemCellModel.m; sourceTree = "<group>"; };
+		F21D6627206B87740026969A /* WZCustomerSettingTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WZCustomerSettingTableViewCell.h; sourceTree = "<group>"; };
+		F21D6628206B87740026969A /* WZCustomerSettingTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WZCustomerSettingTableViewCell.m; sourceTree = "<group>"; };
+		F21D6629206B87740026969A /* WZCustomerSettingTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WZCustomerSettingTableViewCell.xib; sourceTree = "<group>"; };
+		F21D6630206B8BC90026969A /* DGMyOrderViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DGMyOrderViewController.h; sourceTree = "<group>"; };
+		F21D6631206B8BC90026969A /* DGMyOrderViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DGMyOrderViewController.m; sourceTree = "<group>"; };
+		F21D6633206B97640026969A /* carEmptry.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = carEmptry.xib; sourceTree = "<group>"; };
+		F21D6635206B97790026969A /* carEmptry.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = carEmptry.h; sourceTree = "<group>"; };
+		F21D6636206B97790026969A /* carEmptry.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = carEmptry.m; sourceTree = "<group>"; };
 		F224E97220594AF000C92206 /* MyAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyAlertView.m; sourceTree = "<group>"; };
 		F224E97320594AF000C92206 /* MyAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyAlertView.h; sourceTree = "<group>"; };
-		F224E97520594B8E00C92206 /* yw_1222.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = yw_1222.jpg; sourceTree = "<group>"; };
+		F224E97520594B8E00C92206 /* yw_122211.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = yw_122211.jpg; sourceTree = "<group>"; };
 		F224E9772059519900C92206 /* ALiTradeSDKShareParam.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALiTradeSDKShareParam.m; sourceTree = "<group>"; };
 		F224E9782059519A00C92206 /* ALiTradeSDKShareParam.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALiTradeSDKShareParam.h; sourceTree = "<group>"; };
 		F224E97A205951E500C92206 /* ALiTradeWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALiTradeWebViewController.h; sourceTree = "<group>"; };
 		F224E97B205951E500C92206 /* ALiTradeWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALiTradeWebViewController.m; sourceTree = "<group>"; };
-		F2E779622069062B00E65319 /* yw_122222.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = yw_122222.jpg; sourceTree = "<group>"; };
-		F2E779642069094700E65319 /* yw_122233.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = yw_122233.jpg; sourceTree = "<group>"; };
+		F2E779622069062B00E65319 /* yw_1222.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = yw_1222.jpg; sourceTree = "<group>"; };
 		F2E7796620690D6900E65319 /* DGSearchViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DGSearchViewController.h; sourceTree = "<group>"; };
 		F2E7796720690D6900E65319 /* DGSearchViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DGSearchViewController.m; sourceTree = "<group>"; };
 		F2E779692069136300E65319 /* DGLaunchImageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DGLaunchImageView.h; sourceTree = "<group>"; };
 		F2E7796A2069136300E65319 /* DGLaunchImageView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DGLaunchImageView.m; sourceTree = "<group>"; };
+		F2E77976206B430300E65319 /* yw_122233.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = yw_122233.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -334,9 +363,9 @@
 				F224E97B205951E500C92206 /* ALiTradeWebViewController.m */,
 				F224E9782059519A00C92206 /* ALiTradeSDKShareParam.h */,
 				F224E9772059519900C92206 /* ALiTradeSDKShareParam.m */,
-				F224E97520594B8E00C92206 /* yw_1222.jpg */,
-				F2E779622069062B00E65319 /* yw_122222.jpg */,
-				F2E779642069094700E65319 /* yw_122233.jpg */,
+				F2E77976206B430300E65319 /* yw_122233.jpg */,
+				F224E97520594B8E00C92206 /* yw_122211.jpg */,
+				F2E779622069062B00E65319 /* yw_1222.jpg */,
 				F224E97320594AF000C92206 /* MyAlertView.h */,
 				F224E97220594AF000C92206 /* MyAlertView.m */,
 				6003F59C195388D20070C39A /* DGAppDelegate.h */,
@@ -656,6 +685,9 @@
 		F21028C62062606E0039F71E /* view */ = {
 			isa = PBXGroup;
 			children = (
+				F21D6633206B97640026969A /* carEmptry.xib */,
+				F21D6635206B97790026969A /* carEmptry.h */,
+				F21D6636206B97790026969A /* carEmptry.m */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -663,6 +695,7 @@
 		F21028C7206260790039F71E /* my */ = {
 			isa = PBXGroup;
 			children = (
+				F21D661C206B87740026969A /* Setting */,
 				F21028C8206260790039F71E /* model */,
 				F21028C9206260790039F71E /* vc */,
 				F21028CA206260790039F71E /* view */,
@@ -683,6 +716,9 @@
 				F21028D820626FA70039F71E /* DGMyViewController.h */,
 				F21028D920626FA70039F71E /* DGMyViewController.m */,
 				F21028DA20626FA70039F71E /* DGMyViewController.xib */,
+				F21D6613206B86DA0026969A /* DGSettingViewController.h */,
+				F21D6614206B86DA0026969A /* DGSettingViewController.m */,
+				F21D6615206B86DA0026969A /* DGSettingViewController.xib */,
 			);
 			path = vc;
 			sourceTree = "<group>";
@@ -727,6 +763,49 @@
 			children = (
 			);
 			path = view;
+			sourceTree = "<group>";
+		};
+		F21D661C206B87740026969A /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				F21D661D206B87740026969A /* Controller */,
+				F21D6623206B87740026969A /* Model */,
+				F21D6626206B87740026969A /* View */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		F21D661D206B87740026969A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F21D661E206B87740026969A /* WZCustomerSettingViewController.h */,
+				F21D661F206B87740026969A /* WZCustomerSettingViewController.m */,
+				F21D6620206B87740026969A /* WZSettingImportantViewController.h */,
+				F21D6621206B87740026969A /* WZSettingImportantViewController.m */,
+				F21D6622206B87740026969A /* WZSettingImportantViewController.xib */,
+				F21D6630206B8BC90026969A /* DGMyOrderViewController.h */,
+				F21D6631206B8BC90026969A /* DGMyOrderViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F21D6623206B87740026969A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F21D6624206B87740026969A /* WZCustomerSettingItemCellModel.h */,
+				F21D6625206B87740026969A /* WZCustomerSettingItemCellModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F21D6626206B87740026969A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F21D6627206B87740026969A /* WZCustomerSettingTableViewCell.h */,
+				F21D6628206B87740026969A /* WZCustomerSettingTableViewCell.m */,
+				F21D6629206B87740026969A /* WZCustomerSettingTableViewCell.xib */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -781,7 +860,7 @@
 				ORGANIZATIONNAME = "272789124@qq.com";
 				TargetAttributes = {
 					6003F589195388D20070C39A = {
-						DevelopmentTeam = YZ264KY5WM;
+						DevelopmentTeam = GBV4SHXM3S;
 						ProvisioningStyle = Automatic;
 					};
 					6003F5AD195388D20070C39A = {
@@ -814,17 +893,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				F21028AE2062350D0039F71E /* SASharePanel.xib in Resources */,
-				F2E779632069062B00E65319 /* yw_122222.jpg in Resources */,
+				F21D662C206B87740026969A /* WZSettingImportantViewController.xib in Resources */,
+				F2E779632069062B00E65319 /* yw_1222.jpg in Resources */,
+				F21D6634206B97640026969A /* carEmptry.xib in Resources */,
 				F21028932062350D0039F71E /* WZTableViewCell.xib in Resources */,
 				F21028912062350D0039F71E /* WZEmptyView.xib in Resources */,
-				F2E779652069094700E65319 /* yw_122233.jpg in Resources */,
+				F21D6617206B86DA0026969A /* DGSettingViewController.xib in Resources */,
+				F2E77977206B430400E65319 /* yw_122233.jpg in Resources */,
 				F21028DC20626FA70039F71E /* DGMyViewController.xib in Resources */,
 				F21028BE2062448F0039F71E /* DGHomeListTableViewCell.xib in Resources */,
 				F21028E720627C270039F71E /* CCSearchHeaderButtonView.xib in Resources */,
 				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
 				71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */,
+				F21D662F206B87740026969A /* WZCustomerSettingTableViewCell.xib in Resources */,
 				F210288C2062350D0039F71E /* WZAdViewController.xib in Resources */,
-				F224E97620594B8E00C92206 /* yw_1222.jpg in Resources */,
+				F224E97620594B8E00C92206 /* yw_122211.jpg in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
 			);
@@ -928,6 +1011,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F21D6632206B8BC90026969A /* DGMyOrderViewController.m in Sources */,
 				F210289A2062350D0039F71E /* WZNewVersionModel.m in Sources */,
 				F210289F2062350D0039F71E /* JLRoutes+YM.m in Sources */,
 				F21028952062350D0039F71E /* WZAppSetting.m in Sources */,
@@ -935,6 +1019,7 @@
 				F210289D2062350D0039F71E /* WZRequestModel.m in Sources */,
 				F210282E2062336B0039F71E /* DGHomeViewController.m in Sources */,
 				F2E7796820690D6900E65319 /* DGSearchViewController.m in Sources */,
+				F21D6616206B86DA0026969A /* DGSettingViewController.m in Sources */,
 				F210282320622F6B0039F71E /* WZViewController.m in Sources */,
 				F21028AC2062350D0039F71E /* CCWXShare.m in Sources */,
 				F21028A62062350D0039F71E /* UIView+WZXibView.m in Sources */,
@@ -963,6 +1048,8 @@
 				F21028AB2062350D0039F71E /* CCBridgeModule.m in Sources */,
 				F210289B2062350D0039F71E /* WZPush.m in Sources */,
 				F21028A52062350D0039F71E /* UIButton+WZButton.m in Sources */,
+				F21D662D206B87740026969A /* WZCustomerSettingItemCellModel.m in Sources */,
+				F21D662A206B87740026969A /* WZCustomerSettingViewController.m in Sources */,
 				F210289C2062350D0039F71E /* WZRequest.m in Sources */,
 				6003F5A7195388D20070C39A /* DGViewController.m in Sources */,
 				F21028E2206276FC0039F71E /* DGSpecialListViewController.m in Sources */,
@@ -973,9 +1060,11 @@
 				F21028A22062350D0039F71E /* NSString+WZFormat.m in Sources */,
 				F21028E620627C270039F71E /* CCSearchHeaderButtonView.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
+				F21D6637206B97790026969A /* carEmptry.m in Sources */,
 				F21028A12062350D0039F71E /* NSString+Hash.m in Sources */,
 				F210282420622F6B0039F71E /* WZWebViewController.m in Sources */,
 				F21028D720626ED40039F71E /* DGCarViewController.m in Sources */,
+				F21D662B206B87740026969A /* WZSettingImportantViewController.m in Sources */,
 				F210288D2062350D0039F71E /* WZButton.m in Sources */,
 				F21028A32062350D0039F71E /* NSString+WZString.m in Sources */,
 				F21028DF206274210039F71E /* DGBaoyouViewController.m in Sources */,
@@ -983,6 +1072,7 @@
 				F210282520622F6B0039F71E /* WZTabBarController.m in Sources */,
 				F21028922062350D0039F71E /* WZTableViewCell.m in Sources */,
 				F21028AF2062350D0039F71E /* SBDatePickerView.m in Sources */,
+				F21D662E206B87740026969A /* WZCustomerSettingTableViewCell.m in Sources */,
 				F21028B12062350D0039F71E /* WZShare.m in Sources */,
 				F21028B22062350D0039F71E /* YHLTextFieldPhone.m in Sources */,
 				F210288A2062350D0039F71E /* SBUploadImageView.m in Sources */,
@@ -1120,7 +1210,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer: wuchen@cityym.com (56YV865TKB)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = YZ264KY5WM;
+				DEVELOPMENT_TEAM = GBV4SHXM3S;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1134,7 +1224,7 @@
 					"$(PROJECT_DIR)/dg/common/Lib/Tencent/gbs",
 				);
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = com.chechengshe.wyjiakao;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cityym.youyougou;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -1151,7 +1241,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = YZ264KY5WM;
+				DEVELOPMENT_TEAM = GBV4SHXM3S;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1165,7 +1255,7 @@
 					"$(PROJECT_DIR)/dg/common/Lib/Tencent/gbs",
 				);
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = com.chechengshe.wyjiakao;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cityym.youyougou;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";

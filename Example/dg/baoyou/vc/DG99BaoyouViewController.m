@@ -30,12 +30,6 @@
     return @[@"DGHomeListTableViewCell"];
 }
 
--(void)loadView{
-    [super loadView];
-    
-    self.didSupportHeaderRefreshing=YES;
-}
-
 - (void)viewDidLoad {
     [super viewDidLoad];
     
@@ -45,18 +39,33 @@
 
 -(void)headerRefreshing{
     
-    NSDictionary *param =@{@"module":@"m2",@"pager":@"2",@"cat":self.cat};
+    NSDictionary *param =@{@"module":@"m2",@"pager":@(self.page).stringValue,@"cat":self.cat};
     
     [WZRequest GET:yhqcoupongetaction parameters:param headerFields:nil completion:^(id  _Nullable json, JSONModelError * _Nullable err) {
+        [self endHeaderRefreshing];
+        [self endFooterRefreshing];
         if (json!=nil) {
+            NSInteger curPage = [json[@"coupon"][@"currentPage"] integerValue];
+            NSInteger pageNum = [json[@"coupon"][@"pageNum"] integerValue];
+            if (curPage>0&&curPage<pageNum) {
+                self.page=curPage+1;
+                [self setRefreshFooterStatus:MSRefreshFooterStatusIdle];
+            }else{
+                [self setRefreshFooterStatus:MSRefreshFooterStatusHidden];
+            }
+            
+            
             NSArray *coupons = json[@"coupon"][@"coupons"];
-            baseMutableDataSource *dataSource = [[baseMutableDataSource alloc] init];
-            
+            baseMutableDataSource *dataSource = self.dataSource;
+            if (dataSource==nil) {
+                dataSource =  [[baseMutableDataSource alloc] init];
+            }
             NSArray *array = [DGListModel parseArray:coupons];
-            
-            [dataSource addNewSection:@"" withItems:array];
+            [dataSource appendItems:array atSection:0];
             
             [self reloadPages:dataSource];
+            
+            
         }
     }];
 }

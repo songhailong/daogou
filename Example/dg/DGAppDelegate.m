@@ -38,9 +38,9 @@
     // 配置全局的淘客参数
     //如果没有阿里妈妈的淘客账号,setTaokeParams函数需要调用
     
-//    AlibcTradeTaokeParams *taokeParams = [[AlibcTradeTaokeParams alloc] init];
-//    taokeParams.pid = @"mm_XXXXX"; //mm_XXXXX为你自己申请的阿里妈妈淘客pid
-//    [[AlibcTradeSDK sharedInstance] setTaokeParams:taokeParams];
+    AlibcTradeTaokeParams *taokeParams = [[AlibcTradeTaokeParams alloc] init];
+    taokeParams.pid = @"mm_127970548_0_0"; //mm_XXXXX为你自己申请的阿里妈妈淘客pid
+    [[AlibcTradeSDK sharedInstance] setTaokeParams:taokeParams];
     
     //设置全局的app标识，在电商模块里等同于isv_code
     //没有申请过isv_code的接入方,默认不需要调用该函数

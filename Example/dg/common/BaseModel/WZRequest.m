@@ -121,10 +121,12 @@ static NSString * const clientKey = @"ebf4c30a0d6142859c7dd33652f9ef54";
     NSString *signString =nil;
     if ([URLString containsString:yhqcouponsearchaction]) {
         signString = [self signStringSearch:param];
-    }else{
+        param[@"token"] = [signString md5String];
+    }else if ([URLString containsString:yhqcoupongetaction]) {
         signString= [self signString:param];
+        param[@"token"] = [signString md5String];
     }
-    param[@"token"] = [signString md5String];
+    
     
     
     [MBProgressHUD showMessage:@"加载中…"];

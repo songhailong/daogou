@@ -14,6 +14,14 @@
 
 @implementation WZTableViewController
 
+-(void)loadView{
+    [super loadView];
+    
+    self.didSupportHeaderRefreshing=YES;
+    self.didSupportFooterRefreshing=YES;
+}
+
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor=[UIColor colorWithHexString:@"f5f5f5"];
@@ -26,6 +34,10 @@
 //        [[self.webView scrollView] setContentInsetAdjustmentBehavior: UIScrollViewContentInsetAdjustmentNever];
     }
     
+    [self headerRefreshing];
+}
+
+- (void)footerRefreshing{
     [self headerRefreshing];
 }
 
@@ -52,6 +64,14 @@
             
             [weakSelf updateHeaderWhenRequestFinished];
         }];
+    }
+}
+
+-(NSInteger)page{
+    if (_page==0) {
+        return 1;
+    }else{
+        return _page;
     }
 }
 

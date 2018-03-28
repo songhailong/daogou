@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="carEmptry">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gM0-iq-hO1">
+                    <rect key="frame" x="88.5" y="229" width="199" height="209"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="messages_default" translatesAutoresizingMaskIntoConstraints="NO" id="KDK-pN-OLu">
+                            <rect key="frame" x="0.0" y="0.0" width="199" height="100"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="100" id="dgZ-1e-iRa"/>
+                            </constraints>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F8w-0a-ecY">
+                            <rect key="frame" x="49" y="149" width="100" height="40"/>
+                            <color key="backgroundColor" red="0.98039215690000003" green="0.30980392159999998" blue="0.094117647060000004" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="100" id="S4Q-d1-feO"/>
+                                <constraint firstAttribute="height" constant="40" id="fBY-Q2-Ker"/>
+                            </constraints>
+                            <state key="normal" title="登录"/>
+                            <connections>
+                                <action selector="LoginClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="jLS-qL-UzS"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="没有登录不能查看购物车额！！！" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wbL-zB-dhc">
+                            <rect key="frame" x="0.0" y="108" width="199" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="230-mi-xSH"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <color key="textColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="wbL-zB-dhc" secondAttribute="trailing" id="0W4-zg-NVJ"/>
+                        <constraint firstItem="F8w-0a-ecY" firstAttribute="centerX" secondItem="gM0-iq-hO1" secondAttribute="centerX" id="6hs-bZ-C3h"/>
+                        <constraint firstItem="KDK-pN-OLu" firstAttribute="top" secondItem="gM0-iq-hO1" secondAttribute="top" id="FX2-xU-GoE"/>
+                        <constraint firstItem="KDK-pN-OLu" firstAttribute="leading" secondItem="gM0-iq-hO1" secondAttribute="leading" id="JkH-5T-gxs"/>
+                        <constraint firstItem="wbL-zB-dhc" firstAttribute="top" secondItem="KDK-pN-OLu" secondAttribute="bottom" constant="8" id="LHh-xl-MED"/>
+                        <constraint firstItem="wbL-zB-dhc" firstAttribute="leading" secondItem="gM0-iq-hO1" secondAttribute="leading" id="Rio-7P-rgx"/>
+                        <constraint firstItem="F8w-0a-ecY" firstAttribute="top" secondItem="wbL-zB-dhc" secondAttribute="bottom" constant="20" id="WYc-Hj-ekf"/>
+                        <constraint firstAttribute="trailing" secondItem="KDK-pN-OLu" secondAttribute="trailing" id="ty7-XK-jcL"/>
+                        <constraint firstAttribute="bottom" secondItem="F8w-0a-ecY" secondAttribute="bottom" constant="20" id="yKC-Nu-l7N"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="gM0-iq-hO1" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="5IW-dK-T10"/>
+                <constraint firstItem="gM0-iq-hO1" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="6Od-qr-9fO"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="loginButton" destination="F8w-0a-ecY" id="51W-St-KhK"/>
+            </connections>
+            <point key="canvasLocation" x="24.5" y="51.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="messages_default" width="140" height="90"/>
+    </resources>
+</document>

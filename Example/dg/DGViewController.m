@@ -57,12 +57,6 @@
     };
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
 - (IBAction)btnClick:(id)sender {
     if(![[ALBBSession sharedInstance] isLogin]){
         [[ALBBSDK sharedInstance] auth:self successCallback:_loginSuccessCallback failureCallback:_loginFailedCallback];
@@ -100,7 +94,7 @@
     showParam.linkKey=[DGGlobalConfig schemeType];
     //    showParam.linkKey = @"dingding_scheme";//暂时拉起天猫
     
-    if (!isBindWebview) {
+    if (isBindWebview) {
         
         ALiTradeWebViewController* view = [[ALiTradeWebViewController alloc] init];
         NSInteger res = [[AlibcTradeSDK sharedInstance].tradeService show:view webView:view.webView page:page showParams:showParam taoKeParams:[DGGlobalConfig taokeParam] trackParam:[DGGlobalConfig customParam] tradeProcessSuccessCallback:self.onTradeSuccess tradeProcessFailedCallback:self.onTradeFailure];
@@ -108,7 +102,7 @@
             [self.navigationController pushViewController:view animated:YES];
         }
     } else {
-        if (!isNeedPush) {
+        if (isNeedPush) {
             [[AlibcTradeSDK sharedInstance].tradeService show:self.navigationController page:page showParams:showParam taoKeParams:[DGGlobalConfig taokeParam] trackParam:[DGGlobalConfig customParam] tradeProcessSuccessCallback:self.onTradeSuccess tradeProcessFailedCallback: self.onTradeFailure];
         } else {
             [[AlibcTradeSDK sharedInstance].tradeService show:self page:page showParams:showParam taoKeParams:[DGGlobalConfig taokeParam] trackParam:[DGGlobalConfig customParam] tradeProcessSuccessCallback:self.onTradeSuccess tradeProcessFailedCallback: self.onTradeFailure];
