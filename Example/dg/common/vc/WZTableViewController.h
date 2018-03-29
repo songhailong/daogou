@@ -12,4 +12,5 @@
 
 @property(nonatomic,assign) NSInteger page;
 
+-(void)reloadPageData;
 @end

@@ -9,7 +9,7 @@
 #import "DGSpecialViewController.h"
 #import "DGSpecialListViewController.h"
 #import "CCSearchHeaderButtonView.h"
-
+#import "UIView+WZXibView.h"
 @interface DGSpecialViewController ()
 
 @end
@@ -18,7 +18,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.navigationItem.titleView=[CCSearchHeaderButtonView initWithXib:CGRectMake(0, 5, WZwidth, 34)];
+    
+    
+    self.navigationItem.titleView=[CCSearchHeaderButtonView initWithXibWithFrame:CGRectMake(0, 5, WZwidth, 34)];
 //    self.view.backgroundColor=[UIColor redColor];
     
     [self loadMenus];

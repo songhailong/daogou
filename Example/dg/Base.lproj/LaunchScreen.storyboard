@@ -30,10 +30,19 @@
                                 <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WechatIMG545" translatesAutoresizingMaskIntoConstraints="NO" id="eoD-ho-NxI">
+                                <rect key="frame" x="137.5" y="283.5" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="CtI-nQ-e0g"/>
+                                    <constraint firstAttribute="width" constant="100" id="iWJ-iZ-yBu"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="3st-mf-bVM" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="LPc-wl-7Tm"/>
+                            <constraint firstItem="eoD-ho-NxI" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="n9H-hT-jiV"/>
+                            <constraint firstItem="eoD-ho-NxI" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="pYd-NL-yx4"/>
                             <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="3st-mf-bVM" secondAttribute="bottom" constant="30" id="v3n-xc-Tiy"/>
                         </constraints>
                     </view>
@@ -43,4 +52,7 @@
             <point key="canvasLocation" x="52" y="374.66266866566718"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="WechatIMG545" width="1025" height="1025"/>
+    </resources>
 </document>

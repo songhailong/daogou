@@ -37,9 +37,7 @@
     self.tableView.backgroundColor = [UIColor whiteColor];
 }
 
-
--(void)headerRefreshing{
-    
+-(void)reloadPageData{
     NSDictionary *param =@{@"module":@"m1",@"pager":@(self.page).stringValue,@"cat":self.cat};
     
     [WZRequest GET:yhqcoupongetaction parameters:param headerFields:nil completion:^(id  _Nullable json, JSONModelError * _Nullable err) {
@@ -67,6 +65,11 @@
             [self reloadPages:dataSource];
         }
     }];
+}
+-(void)headerRefreshing{
+    self.page=1;
+    self.dataSource=[[baseMutableDataSource alloc] init];
+    [self reloadPageData];
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{

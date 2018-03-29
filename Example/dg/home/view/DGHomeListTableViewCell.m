@@ -18,6 +18,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *totalLabel;
 @property (weak, nonatomic) IBOutlet UILabel *priceLabel;
 @property (weak, nonatomic) IBOutlet UILabel *marketLabel;
+@property (weak, nonatomic) IBOutlet UILabel *des;
 
 
 @end
@@ -34,9 +35,18 @@
     DGListModel *model = (DGListModel *)cellModel;
     [self.image sd_setImageWithURL:[NSURL URLWithString:model.prdtImgUrl] placeholderImage:nil];
     self.titleLabel.text=model.prdtName;
-    self.totalLabel.text=@(model.couponRemainCount).stringValue;
-    self.priceLabel.text=[NSString stringWithFormat:@"%.2f",model.prdtPrice-model.couponValue];
-    self.marketLabel.text=[NSString stringWithFormat:@"%.2f",model.prdtPrice];
+    self.des.text=model.couponInfo;
+    self.totalLabel.text=[NSString stringWithFormat:@"剩%ld件",model.couponRemainCount];
+    NSInteger day = labs(model.couponLessHours)/24;
+    NSInteger hours = labs(model.couponLessHours)%24;
+    if (day>0) {
+        self.timeLabel.text=[NSString stringWithFormat:@"剩余%ld天%ld小时",(long)day,(long)hours];
+    }else{
+        self.timeLabel.text=[NSString stringWithFormat:@"剩余%ld小时",(long)hours];
+    }
+    
+    self.priceLabel.text=[NSString stringWithFormat:@"%.1f",model.prdtPrice-model.couponValue];
+    self.marketLabel.text=[NSString stringWithFormat:@"%.1f",model.prdtPrice];
     
 }
 

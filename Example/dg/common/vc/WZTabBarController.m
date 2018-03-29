@@ -17,6 +17,8 @@
 #import "DGCarViewController.h"
 #import "DGMyViewController.h"
 #import "DGBaoyouViewController.h"
+#import "DG99BaoyouViewController.h"
+#import "DGSpecialListViewController.h"
 
 @interface WZTabBarController ()<UITabBarControllerDelegate>
 
@@ -70,8 +72,10 @@
 -(void) creatMainView{
     
     DGHomeViewController *home = [[DGHomeViewController alloc] init];
-    DGBaoyouViewController *baoyou = [[DGBaoyouViewController alloc] init];
-    DGSpecialViewController *special = [[DGSpecialViewController alloc] init];
+//    DGBaoyouViewController *baoyou = [[DGBaoyouViewController alloc] init];
+    DG99BaoyouViewController *baoyou = [[DG99BaoyouViewController alloc] initWithParam:@{@"cat":@"",@"title":@"9.9包邮"}];
+//    DGSpecialViewController *special = [[DGSpecialViewController alloc] init];
+    DGSpecialListViewController *special = [[DGSpecialListViewController alloc] initWithParam:@{@"cat":@"",@"title":@"特惠"}];
     DGCarViewController *car = [[DGCarViewController alloc] init];
     DGMyViewController *me = [[DGMyViewController alloc] init];
     

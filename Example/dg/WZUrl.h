@@ -14,7 +14,8 @@
 
 
 //java
-#define YMdomain @"http://112.29.171.12:8080"
+//#define YMdomain @"http://112.29.171.12:8080"
+#define YMdomain @"http://it.cityym.com:8080"
 
 #define kMobileAPIFormat_M(fmt, ...) [YMdomain stringByAppendingFormat:fmt, ##__VA_ARGS__]
 
@@ -27,3 +28,5 @@
 #define yhqinvitcodesubmitaction kMobileAPIFormat_M(@"/yhq/invitcode.submit.action")
 
 #endif /* WZUrl_h */
+
+//lihu0800205@icloud.com

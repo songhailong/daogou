@@ -35,8 +35,12 @@
         self.navigationItem.title=self.key;
     }
 }
-
 -(void)headerRefreshing{
+    self.page=1;
+    self.dataSource=[[baseMutableDataSource alloc] init];
+    [self reloadPageData];
+}
+-(void)reloadPageData{
     if (self.key==nil) {
         self.key=@"";
     }

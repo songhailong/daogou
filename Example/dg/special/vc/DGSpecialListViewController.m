@@ -43,6 +43,11 @@
 }
 
 -(void)headerRefreshing{
+    self.page=1;
+    self.dataSource=[[baseMutableDataSource alloc] init];
+    [self reloadPageData];
+}
+-(void)reloadPageData{
     
     NSDictionary *param =@{@"module":@"m3",@"pager":@(self.page).stringValue,@"cat":self.cat};
     

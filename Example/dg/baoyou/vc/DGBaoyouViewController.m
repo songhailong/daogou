@@ -9,6 +9,7 @@
 #import "DGBaoyouViewController.h"
 #import "DG99BaoyouViewController.h"
 #import "CCSearchHeaderButtonView.h"
+#import "UIView+WZXibView.h"
 @interface DGBaoyouViewController ()
 
 @end
@@ -19,7 +20,7 @@
     [super viewDidLoad];
 //    self.navigationItem.title=@"搜索";
 //    self.view.backgroundColor=[UIColor redColor];
-    self.navigationItem.titleView=[CCSearchHeaderButtonView initWithXib:CGRectMake(0, 5, WZwidth, 34)];
+    self.navigationItem.titleView=[CCSearchHeaderButtonView initWithXibWithFrame:CGRectMake(0, 5, WZwidth, 34)];
     [self loadMenus];
 }
 static NSArray *array ;

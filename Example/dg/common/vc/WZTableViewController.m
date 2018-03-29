@@ -38,7 +38,10 @@
 }
 
 - (void)footerRefreshing{
-    [self headerRefreshing];
+    [self reloadPageData];
+}
+-(void)reloadPageData{
+    
 }
 
 - (void)headerRefreshing

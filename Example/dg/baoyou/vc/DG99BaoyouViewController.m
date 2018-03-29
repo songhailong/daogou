@@ -36,8 +36,12 @@
     self.view.backgroundColor=[UIColor whiteColor];
     self.tableView.backgroundColor = [UIColor whiteColor];
 }
-
 -(void)headerRefreshing{
+    self.page=1;
+    self.dataSource=[[baseMutableDataSource alloc] init];
+    [self reloadPageData];
+}
+-(void)reloadPageData{
     
     NSDictionary *param =@{@"module":@"m2",@"pager":@(self.page).stringValue,@"cat":self.cat};
     

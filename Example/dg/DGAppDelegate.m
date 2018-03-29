@@ -9,12 +9,16 @@
 #import "DGAppDelegate.h"
 #import <AlibcTradeSDK/AlibcTradeSDK.h>
 #import "WZWindow.h"
+#import <IQKeyboardManager/IQKeyboardManager.h>
 
 @implementation DGAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[WZWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
+    
+    IQKeyboardManager *keyboardManager = [IQKeyboardManager sharedManager];
+    keyboardManager.shouldShowToolbarPlaceholder = NO;
     
     [self application:application];
     
@@ -53,13 +57,6 @@
 }
 
 - (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation{
-    /* 老接口写法 已弃用，建议使用新接口
-     if (![[AlibcTradeSDK sharedInstance] handleOpenURL:url]) {
-     // 处理其他app跳转到自己的app
-     }
-     return YES;
-     */
-    
     // 新接口写法
     if (![[AlibcTradeSDK sharedInstance] application:application
                                              openURL:url
@@ -71,14 +68,6 @@
 }
 
 - (BOOL)application:(UIApplication *)application openURL:(NSURL *)url options:(NSDictionary<NSString *,id> *)options {
-    
-    /* 老接口写法 已弃用，建议使用新接口
-     if (![[AlibcTradeSDK sharedInstance] handleOpenURL:url]) {
-     // 处理其他app跳转到自己的app
-     }
-     return YES;
-     */
-    
     // 新接口写法
     if (![[AlibcTradeSDK sharedInstance] application:application
                                              openURL:url
