@@ -29,15 +29,21 @@
 
 -(IBAction)LoginClick:(id)sender{
     
+    
+    
     _loginSuccessCallback=^(ALBBSession *session){
         [[NSNotificationCenter defaultCenter] postNotificationName:@"refreshCarNot" object:nil];
     };
     
     _loginFailedCallback=^(ALBBSession *session, NSError *error){
-        [[MyAlertView alertViewWithTitle:@"登录失败" message:@"请稍后再试！" oALinClicked:nil cancelButtonTitle:@"确定" otherButtonTitles:nil]show];
+        NSString *errorString = error.userInfo[@"NSLocalizedDescription"];
+        if (![errorString containsString:@"H5_LOGIN_CANCEL"]) {
+            [[MyAlertView alertViewWithTitle:@"登录失败" message:@"请稍后再试！" oALinClicked:nil cancelButtonTitle:@"确定" otherButtonTitles:nil]show];
+        }
     };
     //
-    [[ALBBSDK sharedInstance] auth:nil successCallback:_loginSuccessCallback failureCallback:_loginFailedCallback];
+    UIViewController *vc = [MSActiveControllerFinder finder].activeTopController();
+    [[ALBBSDK sharedInstance] auth:vc successCallback:_loginSuccessCallback failureCallback:_loginFailedCallback];
 }
 
 @end

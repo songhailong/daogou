@@ -58,7 +58,10 @@
     };
     
     _loginFailedCallback=^(ALBBSession *session, NSError *error){
-        [[MyAlertView alertViewWithTitle:@"登录失败" message:@"请稍后再试！" oALinClicked:nil cancelButtonTitle:@"确定" otherButtonTitles:nil]show];
+        NSString *errorString = error.userInfo[@"NSLocalizedDescription"];
+        if (![errorString containsString:@"H5_LOGIN_CANCEL"]) {
+            [[MyAlertView alertViewWithTitle:@"登录失败" message:@"请稍后再试！" oALinClicked:nil cancelButtonTitle:@"确定" otherButtonTitles:nil]show];
+        }
     };
     
     self.headImage.userInteractionEnabled=YES;

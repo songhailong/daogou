@@ -17,6 +17,23 @@
 
 @implementation DGHomeViewController
 
+- (instancetype)initWithCoder:(NSCoder *)aDecoder
+{
+    if (self = [super initWithCoder:aDecoder]) {
+        [self loadMenus];
+    }
+    return self;
+}
+
+- (instancetype)init
+{
+    if (self = [super init]) {
+        [self loadMenus];
+    }
+    return self;
+}
+
+
 - (void)viewDidLoad {
     [super viewDidLoad];
 //    self.navigationItem.title=@"搜索";
@@ -24,8 +41,15 @@
     
     self.navigationItem.titleView=[CCSearchHeaderButtonView initWithXibWithFrame:CGRectMake(0, 5, WZwidth, 34)];
     
-    [self loadMenus];
+//    self.selectedIndex = 0;
+    [self.navigationView setValue:[[NSNumber alloc] initWithInt:1] forKeyPath:@"aligment"];
+    self.navigationView.selectedTextColor = [UIColor colorWithHexString:@"FA4F18"];
+    self.navigationView.normalTextColor = [UIColor colorWithHexString:@"333333"];
+//    self.navigationView.backgroundColor = [UIColor whiteColor];
+//    self.navigationView.itemFont=[UIFont systemFontOfSize:14];
+    self.navigationView.borderColor=[UIColor colorWithHexString:@"e6e6e6"];
 }
+
 static NSArray *array ;
 - (void)loadMenus
 {

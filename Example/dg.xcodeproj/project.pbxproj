@@ -91,6 +91,10 @@
 		F21D6632206B8BC90026969A /* DGMyOrderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F21D6631206B8BC90026969A /* DGMyOrderViewController.m */; };
 		F21D6634206B97640026969A /* carEmptry.xib in Resources */ = {isa = PBXBuildFile; fileRef = F21D6633206B97640026969A /* carEmptry.xib */; };
 		F21D6637206B97790026969A /* carEmptry.m in Sources */ = {isa = PBXBuildFile; fileRef = F21D6636206B97790026969A /* carEmptry.m */; };
+		F21D663E206CE76A0026969A /* AlibabaAuthSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F21D663A206CE76A0026969A /* AlibabaAuthSDK.bundle */; };
+		F21D663F206CE76A0026969A /* AlipaySDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F21D663B206CE76A0026969A /* AlipaySDK.bundle */; };
+		F21D6640206CE76A0026969A /* ALPLinkPartnerSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F21D663C206CE76A0026969A /* ALPLinkPartnerSDK.bundle */; };
+		F21D6641206CE76A0026969A /* NBResource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F21D663D206CE76A0026969A /* NBResource.bundle */; };
 		F224E97420594AF000C92206 /* MyAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = F224E97220594AF000C92206 /* MyAlertView.m */; };
 		F224E97620594B8E00C92206 /* yw_122211.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F224E97520594B8E00C92206 /* yw_122211.jpg */; };
 		F224E9792059519A00C92206 /* ALiTradeSDKShareParam.m in Sources */ = {isa = PBXBuildFile; fileRef = F224E9772059519900C92206 /* ALiTradeSDKShareParam.m */; };
@@ -266,6 +270,10 @@
 		F21D6633206B97640026969A /* carEmptry.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = carEmptry.xib; sourceTree = "<group>"; };
 		F21D6635206B97790026969A /* carEmptry.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = carEmptry.h; sourceTree = "<group>"; };
 		F21D6636206B97790026969A /* carEmptry.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = carEmptry.m; sourceTree = "<group>"; };
+		F21D663A206CE76A0026969A /* AlibabaAuthSDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AlibabaAuthSDK.bundle; sourceTree = "<group>"; };
+		F21D663B206CE76A0026969A /* AlipaySDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AlipaySDK.bundle; sourceTree = "<group>"; };
+		F21D663C206CE76A0026969A /* ALPLinkPartnerSDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ALPLinkPartnerSDK.bundle; sourceTree = "<group>"; };
+		F21D663D206CE76A0026969A /* NBResource.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = NBResource.bundle; sourceTree = "<group>"; };
 		F224E97220594AF000C92206 /* MyAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyAlertView.m; sourceTree = "<group>"; };
 		F224E97320594AF000C92206 /* MyAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyAlertView.h; sourceTree = "<group>"; };
 		F224E97520594B8E00C92206 /* yw_122211.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = yw_122211.jpg; sourceTree = "<group>"; };
@@ -468,6 +476,7 @@
 		F210281320622F110039F71E /* common */ = {
 			isa = PBXGroup;
 			children = (
+				F21D6639206CE76A0026969A /* resource */,
 				F21028432062350D0039F71E /* BaseModel */,
 				F210282F2062350C0039F71E /* BaseView */,
 				F21028582062350D0039F71E /* Category */,
@@ -808,6 +817,17 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		F21D6639206CE76A0026969A /* resource */ = {
+			isa = PBXGroup;
+			children = (
+				F21D663A206CE76A0026969A /* AlibabaAuthSDK.bundle */,
+				F21D663B206CE76A0026969A /* AlipaySDK.bundle */,
+				F21D663C206CE76A0026969A /* ALPLinkPartnerSDK.bundle */,
+				F21D663D206CE76A0026969A /* NBResource.bundle */,
+			);
+			path = resource;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -894,13 +914,17 @@
 			files = (
 				F21028AE2062350D0039F71E /* SASharePanel.xib in Resources */,
 				F21D662C206B87740026969A /* WZSettingImportantViewController.xib in Resources */,
+				F21D6640206CE76A0026969A /* ALPLinkPartnerSDK.bundle in Resources */,
 				F2E779632069062B00E65319 /* yw_1222.jpg in Resources */,
 				F21D6634206B97640026969A /* carEmptry.xib in Resources */,
+				F21D663E206CE76A0026969A /* AlibabaAuthSDK.bundle in Resources */,
 				F21028932062350D0039F71E /* WZTableViewCell.xib in Resources */,
 				F21028912062350D0039F71E /* WZEmptyView.xib in Resources */,
 				F21D6617206B86DA0026969A /* DGSettingViewController.xib in Resources */,
+				F21D6641206CE76A0026969A /* NBResource.bundle in Resources */,
 				F2E77977206B430400E65319 /* yw_122233.jpg in Resources */,
 				F21028DC20626FA70039F71E /* DGMyViewController.xib in Resources */,
+				F21D663F206CE76A0026969A /* AlipaySDK.bundle in Resources */,
 				F21028BE2062448F0039F71E /* DGHomeListTableViewCell.xib in Resources */,
 				F21028E720627C270039F71E /* CCSearchHeaderButtonView.xib in Resources */,
 				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
