@@ -19,8 +19,16 @@
 #import "RankingView.h"
 #import "UIView+WZXibView.h"
 #import "DGTopCellView.h"
+#import <MJRefresh/UIScrollView+MJRefresh.h>
+#import <YHLTableView/SBRefreshNormalHeader.h>
 @interface DGMainViewController ()<YHLCarouselViewDelegate>
+
+@property (nonatomic, strong, readwrite) MJRefreshNormalHeader *refreshHeader;
+
 @property (nonatomic,strong) NSArray *bannerData;
+
+@property (weak, nonatomic) IBOutlet UIScrollView *mainScrollView;
+
 @property (weak, nonatomic) IBOutlet YHLCarouselView *bannerView;
 
 @property (weak, nonatomic) IBOutlet UIScrollView *rankingScrollView;
@@ -47,6 +55,26 @@
     self.bannerView.pageControlCurrentColor=[UIColor colorWithHexString:@"FA4F18"];
     
     [self loadData];
+    
+    self.mainScrollView.mj_header = [self refreshHeader];
+}
+
+- (MJRefreshHeader *)refreshHeader
+{
+    __weak __typeof(self)weakSelf = self;
+    if (!_refreshHeader)
+    {
+        _refreshHeader =[SBRefreshNormalHeader headerWithRefreshingBlock:^(){
+            [weakSelf loadData];
+        }];
+        [_refreshHeader setTitle:@"下拉可以刷新..." forState:MJRefreshStateIdle];
+        [_refreshHeader setTitle:@"松开即可刷新..." forState:MJRefreshStatePulling];
+        [_refreshHeader setTitle:@"正在玩命加载中..." forState:MJRefreshStateRefreshing];
+        
+        _refreshHeader.lastUpdatedTimeLabel.hidden = YES;
+        _refreshHeader.automaticallyChangeAlpha = YES;
+    }
+    return _refreshHeader;
 }
 
 -(void)viewDidLayoutSubviews{
@@ -64,6 +92,7 @@
     
     
     [WZRequest GET:yhqfirstpagergetaction parameters:param headerFields:nil completion:^(id  _Nullable json, JSONModelError * _Nullable err) {
+        [self.mainScrollView.mj_header endRefreshing];
         if (json!=nil) {
             self.bannerData=[DGHomeBannerModel parseArray:json[@"banners"]];
             [self.bannerView reloadData];
