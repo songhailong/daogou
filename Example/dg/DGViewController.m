@@ -69,6 +69,8 @@
 }
 
 - (IBAction)openDetail:(id)sender {
+    //44608674639
+    //531249401478
     id<AlibcTradePage> page = [AlibcTradePageFactory itemDetailPage:@"531249401478"];
     [self OpenByPage:page];
 }

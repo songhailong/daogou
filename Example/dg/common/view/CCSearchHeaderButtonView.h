@@ -10,4 +10,8 @@
 
 @interface CCSearchHeaderButtonView : UIView
 
+@property(nonatomic) UIControlContentHorizontalAlignment contentMode; 
+@property(nonatomic,strong) NSString *title;
+//+(instancetype) initWithXib:(CGRect)frame;
+
 @end

@@ -19,13 +19,24 @@
 
 #define kMobileAPIFormat_M(fmt, ...) [YMdomain stringByAppendingFormat:fmt, ##__VA_ARGS__]
 
-//Account==============================
+
+//
+#define yhqfirstpagergetaction kMobileAPIFormat_M(@"/yhq/firstpager.get.action")
+//热卖品牌
+#define yhqbrandgetaction kMobileAPIFormat_M(@"/yhq/brand.get.action")
 //获取商品列表
 #define yhqcoupongetaction kMobileAPIFormat_M(@"/yhq/coupon.get.action")
 //搜索商品
 #define yhqcouponsearchaction kMobileAPIFormat_M(@"/yhq/coupon.search.action")
 //提交邀请码
 #define yhqinvitcodesubmitaction kMobileAPIFormat_M(@"/yhq/invitcode.submit.action")
+//获取用户邀请码
+#define yhqinvitcodegetaction kMobileAPIFormat_M(@"/yhq/invitcode.get.action")
+//发送登录用户信息到服务端
+#define yhqtbaccountsubmitaction kMobileAPIFormat_M(@"/yhq/tbaccount.submit.action")
+
+//
+
 
 #endif /* WZUrl_h */
 

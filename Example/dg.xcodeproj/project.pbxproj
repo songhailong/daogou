@@ -99,7 +99,34 @@
 		F224E97620594B8E00C92206 /* yw_122211.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F224E97520594B8E00C92206 /* yw_122211.jpg */; };
 		F224E9792059519A00C92206 /* ALiTradeSDKShareParam.m in Sources */ = {isa = PBXBuildFile; fileRef = F224E9772059519900C92206 /* ALiTradeSDKShareParam.m */; };
 		F224E97C205951E500C92206 /* ALiTradeWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F224E97B205951E500C92206 /* ALiTradeWebViewController.m */; };
-		F2E779632069062B00E65319 /* yw_1222.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F2E779622069062B00E65319 /* yw_1222.jpg */; };
+		F2A37860207A191300915D3D /* DGMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2A3785E207A191300915D3D /* DGMainViewController.m */; };
+		F2A37861207A191300915D3D /* DGMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2A3785F207A191300915D3D /* DGMainViewController.xib */; };
+		F2A37864207A2C8200915D3D /* DGHotBandViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2A37863207A2C8200915D3D /* DGHotBandViewController.m */; };
+		F2A37867207A300000915D3D /* DGHotBandCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F2A37866207A300000915D3D /* DGHotBandCellModel.m */; };
+		F2A3786B207A316200915D3D /* DGHotBandCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F2A37869207A316200915D3D /* DGHotBandCollectionViewCell.m */; };
+		F2A3786C207A316200915D3D /* DGHotBandCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2A3786A207A316200915D3D /* DGHotBandCollectionViewCell.xib */; };
+		F2A3786F207B0FE100915D3D /* RankingView.m in Sources */ = {isa = PBXBuildFile; fileRef = F2A3786E207B0FE100915D3D /* RankingView.m */; };
+		F2A37871207B0FF500915D3D /* RankingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2A37870207B0FF500915D3D /* RankingView.xib */; };
+		F2A37874207B1A7100915D3D /* DGTopCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = F2A37873207B1A7100915D3D /* DGTopCellView.m */; };
+		F2A37876207B1A7D00915D3D /* DGTopCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2A37875207B1A7D00915D3D /* DGTopCellView.xib */; };
+		F2A37879207B46B100915D3D /* DGDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2A37878207B46B100915D3D /* DGDetailViewController.m */; };
+		F2A3787C207B533A00915D3D /* DGShopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2A3787B207B533A00915D3D /* DGShopViewController.m */; };
+		F2A37883207B578300915D3D /* CCCCHotSearchCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F2A37881207B578300915D3D /* CCCCHotSearchCellModel.m */; };
+		F2A37886207B579E00915D3D /* CCSearchTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2A37884207B579E00915D3D /* CCSearchTableViewController.m */; };
+		F2A3789A207B57AC00915D3D /* CCHistorySearchHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = F2A37889207B57AC00915D3D /* CCHistorySearchHeaderView.m */; };
+		F2A3789B207B57AC00915D3D /* CCHistorySearchHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2A3788A207B57AC00915D3D /* CCHistorySearchHeaderView.xib */; };
+		F2A3789C207B57AC00915D3D /* CCHistorySearchTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F2A3788C207B57AC00915D3D /* CCHistorySearchTableViewCell.m */; };
+		F2A3789D207B57AC00915D3D /* CCHistorySearchTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2A3788D207B57AC00915D3D /* CCHistorySearchTableViewCell.xib */; };
+		F2A3789E207B57AC00915D3D /* CCHotSearchCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F2A3788F207B57AC00915D3D /* CCHotSearchCollectionViewCell.m */; };
+		F2A3789F207B57AC00915D3D /* CCHotSearchCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2A37890207B57AC00915D3D /* CCHotSearchCollectionViewCell.xib */; };
+		F2A378A0207B57AC00915D3D /* CCHotSearchTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F2A37892207B57AC00915D3D /* CCHotSearchTableViewCell.m */; };
+		F2A378A1207B57AC00915D3D /* CCHotSearchTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2A37893207B57AC00915D3D /* CCHotSearchTableViewCell.xib */; };
+		F2A378A2207B57AC00915D3D /* CCSearchHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = F2A37895207B57AC00915D3D /* CCSearchHeaderView.m */; };
+		F2A378A3207B57AC00915D3D /* CCSearchHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2A37896207B57AC00915D3D /* CCSearchHeaderView.xib */; };
+		F2A378A4207B57AC00915D3D /* CCSearchItemTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F2A37898207B57AC00915D3D /* CCSearchItemTableViewCell.m */; };
+		F2A378A5207B57AC00915D3D /* CCSearchItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2A37899207B57AC00915D3D /* CCSearchItemTableViewCell.xib */; };
+		F2A378A7207B6AA200915D3D /* yw_1222.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F2A378A6207B6AA200915D3D /* yw_1222.jpg */; };
+		F2E779632069062B00E65319 /* yw_122222.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F2E779622069062B00E65319 /* yw_122222.jpg */; };
 		F2E7796820690D6900E65319 /* DGSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2E7796720690D6900E65319 /* DGSearchViewController.m */; };
 		F2E7796B2069136300E65319 /* DGLaunchImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = F2E7796A2069136300E65319 /* DGLaunchImageView.m */; };
 		F2E77977206B430400E65319 /* yw_122233.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F2E77976206B430300E65319 /* yw_122233.jpg */; };
@@ -281,7 +308,50 @@
 		F224E9782059519A00C92206 /* ALiTradeSDKShareParam.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALiTradeSDKShareParam.h; sourceTree = "<group>"; };
 		F224E97A205951E500C92206 /* ALiTradeWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALiTradeWebViewController.h; sourceTree = "<group>"; };
 		F224E97B205951E500C92206 /* ALiTradeWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALiTradeWebViewController.m; sourceTree = "<group>"; };
-		F2E779622069062B00E65319 /* yw_1222.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = yw_1222.jpg; sourceTree = "<group>"; };
+		F2A3785D207A191300915D3D /* DGMainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DGMainViewController.h; sourceTree = "<group>"; };
+		F2A3785E207A191300915D3D /* DGMainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DGMainViewController.m; sourceTree = "<group>"; };
+		F2A3785F207A191300915D3D /* DGMainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DGMainViewController.xib; sourceTree = "<group>"; };
+		F2A37862207A2C8200915D3D /* DGHotBandViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DGHotBandViewController.h; sourceTree = "<group>"; };
+		F2A37863207A2C8200915D3D /* DGHotBandViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DGHotBandViewController.m; sourceTree = "<group>"; };
+		F2A37865207A300000915D3D /* DGHotBandCellModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DGHotBandCellModel.h; sourceTree = "<group>"; };
+		F2A37866207A300000915D3D /* DGHotBandCellModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DGHotBandCellModel.m; sourceTree = "<group>"; };
+		F2A37868207A316200915D3D /* DGHotBandCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DGHotBandCollectionViewCell.h; sourceTree = "<group>"; };
+		F2A37869207A316200915D3D /* DGHotBandCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DGHotBandCollectionViewCell.m; sourceTree = "<group>"; };
+		F2A3786A207A316200915D3D /* DGHotBandCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DGHotBandCollectionViewCell.xib; sourceTree = "<group>"; };
+		F2A3786D207B0FE100915D3D /* RankingView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RankingView.h; sourceTree = "<group>"; };
+		F2A3786E207B0FE100915D3D /* RankingView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RankingView.m; sourceTree = "<group>"; };
+		F2A37870207B0FF500915D3D /* RankingView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RankingView.xib; sourceTree = "<group>"; };
+		F2A37872207B1A7100915D3D /* DGTopCellView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DGTopCellView.h; sourceTree = "<group>"; };
+		F2A37873207B1A7100915D3D /* DGTopCellView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DGTopCellView.m; sourceTree = "<group>"; };
+		F2A37875207B1A7D00915D3D /* DGTopCellView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DGTopCellView.xib; sourceTree = "<group>"; };
+		F2A37877207B46B100915D3D /* DGDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DGDetailViewController.h; sourceTree = "<group>"; };
+		F2A37878207B46B100915D3D /* DGDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DGDetailViewController.m; sourceTree = "<group>"; };
+		F2A3787A207B533A00915D3D /* DGShopViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DGShopViewController.h; sourceTree = "<group>"; };
+		F2A3787B207B533A00915D3D /* DGShopViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DGShopViewController.m; sourceTree = "<group>"; };
+		F2A37881207B578300915D3D /* CCCCHotSearchCellModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCCCHotSearchCellModel.m; sourceTree = "<group>"; };
+		F2A37882207B578300915D3D /* CCCCHotSearchCellModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCCCHotSearchCellModel.h; sourceTree = "<group>"; };
+		F2A37884207B579E00915D3D /* CCSearchTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCSearchTableViewController.m; sourceTree = "<group>"; };
+		F2A37885207B579E00915D3D /* CCSearchTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCSearchTableViewController.h; sourceTree = "<group>"; };
+		F2A37888207B57AC00915D3D /* CCHistorySearchHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCHistorySearchHeaderView.h; sourceTree = "<group>"; };
+		F2A37889207B57AC00915D3D /* CCHistorySearchHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCHistorySearchHeaderView.m; sourceTree = "<group>"; };
+		F2A3788A207B57AC00915D3D /* CCHistorySearchHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CCHistorySearchHeaderView.xib; sourceTree = "<group>"; };
+		F2A3788B207B57AC00915D3D /* CCHistorySearchTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCHistorySearchTableViewCell.h; sourceTree = "<group>"; };
+		F2A3788C207B57AC00915D3D /* CCHistorySearchTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCHistorySearchTableViewCell.m; sourceTree = "<group>"; };
+		F2A3788D207B57AC00915D3D /* CCHistorySearchTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CCHistorySearchTableViewCell.xib; sourceTree = "<group>"; };
+		F2A3788E207B57AC00915D3D /* CCHotSearchCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCHotSearchCollectionViewCell.h; sourceTree = "<group>"; };
+		F2A3788F207B57AC00915D3D /* CCHotSearchCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCHotSearchCollectionViewCell.m; sourceTree = "<group>"; };
+		F2A37890207B57AC00915D3D /* CCHotSearchCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CCHotSearchCollectionViewCell.xib; sourceTree = "<group>"; };
+		F2A37891207B57AC00915D3D /* CCHotSearchTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCHotSearchTableViewCell.h; sourceTree = "<group>"; };
+		F2A37892207B57AC00915D3D /* CCHotSearchTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCHotSearchTableViewCell.m; sourceTree = "<group>"; };
+		F2A37893207B57AC00915D3D /* CCHotSearchTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CCHotSearchTableViewCell.xib; sourceTree = "<group>"; };
+		F2A37894207B57AC00915D3D /* CCSearchHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCSearchHeaderView.h; sourceTree = "<group>"; };
+		F2A37895207B57AC00915D3D /* CCSearchHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCSearchHeaderView.m; sourceTree = "<group>"; };
+		F2A37896207B57AC00915D3D /* CCSearchHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CCSearchHeaderView.xib; sourceTree = "<group>"; };
+		F2A37897207B57AC00915D3D /* CCSearchItemTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCSearchItemTableViewCell.h; sourceTree = "<group>"; };
+		F2A37898207B57AC00915D3D /* CCSearchItemTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCSearchItemTableViewCell.m; sourceTree = "<group>"; };
+		F2A37899207B57AC00915D3D /* CCSearchItemTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CCSearchItemTableViewCell.xib; sourceTree = "<group>"; };
+		F2A378A6207B6AA200915D3D /* yw_1222.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = yw_1222.jpg; sourceTree = "<group>"; };
+		F2E779622069062B00E65319 /* yw_122222.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = yw_122222.jpg; sourceTree = "<group>"; };
 		F2E7796620690D6900E65319 /* DGSearchViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DGSearchViewController.h; sourceTree = "<group>"; };
 		F2E7796720690D6900E65319 /* DGSearchViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DGSearchViewController.m; sourceTree = "<group>"; };
 		F2E779692069136300E65319 /* DGLaunchImageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DGLaunchImageView.h; sourceTree = "<group>"; };
@@ -360,6 +430,7 @@
 		6003F593195388D20070C39A /* Example for dg */ = {
 			isa = PBXGroup;
 			children = (
+				F2A3787D207B576600915D3D /* search */,
 				F21028CB206260830039F71E /* special */,
 				F21028C7206260790039F71E /* my */,
 				F21028C32062606E0039F71E /* car */,
@@ -373,7 +444,8 @@
 				F224E9772059519900C92206 /* ALiTradeSDKShareParam.m */,
 				F2E77976206B430300E65319 /* yw_122233.jpg */,
 				F224E97520594B8E00C92206 /* yw_122211.jpg */,
-				F2E779622069062B00E65319 /* yw_1222.jpg */,
+				F2E779622069062B00E65319 /* yw_122222.jpg */,
+				F2A378A6207B6AA200915D3D /* yw_1222.jpg */,
 				F224E97320594AF000C92206 /* MyAlertView.h */,
 				F224E97220594AF000C92206 /* MyAlertView.m */,
 				6003F59C195388D20070C39A /* DGAppDelegate.h */,
@@ -446,6 +518,8 @@
 			children = (
 				F21028B7206244780039F71E /* DGListModel.h */,
 				F21028B8206244780039F71E /* DGListModel.m */,
+				F2A37865207A300000915D3D /* DGHotBandCellModel.h */,
+				F2A37866207A300000915D3D /* DGHotBandCellModel.m */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -459,6 +533,15 @@
 				F21028B42062403E0039F71E /* DGListViewController.m */,
 				F2E7796620690D6900E65319 /* DGSearchViewController.h */,
 				F2E7796720690D6900E65319 /* DGSearchViewController.m */,
+				F2A3785D207A191300915D3D /* DGMainViewController.h */,
+				F2A3785E207A191300915D3D /* DGMainViewController.m */,
+				F2A3785F207A191300915D3D /* DGMainViewController.xib */,
+				F2A37862207A2C8200915D3D /* DGHotBandViewController.h */,
+				F2A37863207A2C8200915D3D /* DGHotBandViewController.m */,
+				F2A37877207B46B100915D3D /* DGDetailViewController.h */,
+				F2A37878207B46B100915D3D /* DGDetailViewController.m */,
+				F2A3787A207B533A00915D3D /* DGShopViewController.h */,
+				F2A3787B207B533A00915D3D /* DGShopViewController.m */,
 			);
 			path = vc;
 			sourceTree = "<group>";
@@ -469,6 +552,15 @@
 				F21028BA2062448F0039F71E /* DGHomeListTableViewCell.h */,
 				F21028BB2062448F0039F71E /* DGHomeListTableViewCell.m */,
 				F21028BC2062448F0039F71E /* DGHomeListTableViewCell.xib */,
+				F2A37868207A316200915D3D /* DGHotBandCollectionViewCell.h */,
+				F2A37869207A316200915D3D /* DGHotBandCollectionViewCell.m */,
+				F2A3786A207A316200915D3D /* DGHotBandCollectionViewCell.xib */,
+				F2A3786D207B0FE100915D3D /* RankingView.h */,
+				F2A3786E207B0FE100915D3D /* RankingView.m */,
+				F2A37870207B0FF500915D3D /* RankingView.xib */,
+				F2A37872207B1A7100915D3D /* DGTopCellView.h */,
+				F2A37873207B1A7100915D3D /* DGTopCellView.m */,
+				F2A37875207B1A7D00915D3D /* DGTopCellView.xib */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -828,6 +920,67 @@
 			path = resource;
 			sourceTree = "<group>";
 		};
+		F2A3787D207B576600915D3D /* search */ = {
+			isa = PBXGroup;
+			children = (
+				F2A3787E207B576600915D3D /* model */,
+				F2A3787F207B576600915D3D /* vc */,
+				F2A37880207B576600915D3D /* view */,
+			);
+			path = search;
+			sourceTree = "<group>";
+		};
+		F2A3787E207B576600915D3D /* model */ = {
+			isa = PBXGroup;
+			children = (
+				F2A37882207B578300915D3D /* CCCCHotSearchCellModel.h */,
+				F2A37881207B578300915D3D /* CCCCHotSearchCellModel.m */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		F2A3787F207B576600915D3D /* vc */ = {
+			isa = PBXGroup;
+			children = (
+				F2A37885207B579E00915D3D /* CCSearchTableViewController.h */,
+				F2A37884207B579E00915D3D /* CCSearchTableViewController.m */,
+			);
+			path = vc;
+			sourceTree = "<group>";
+		};
+		F2A37880207B576600915D3D /* view */ = {
+			isa = PBXGroup;
+			children = (
+				F2A37887207B57AC00915D3D /* search */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		F2A37887207B57AC00915D3D /* search */ = {
+			isa = PBXGroup;
+			children = (
+				F2A37888207B57AC00915D3D /* CCHistorySearchHeaderView.h */,
+				F2A37889207B57AC00915D3D /* CCHistorySearchHeaderView.m */,
+				F2A3788A207B57AC00915D3D /* CCHistorySearchHeaderView.xib */,
+				F2A3788B207B57AC00915D3D /* CCHistorySearchTableViewCell.h */,
+				F2A3788C207B57AC00915D3D /* CCHistorySearchTableViewCell.m */,
+				F2A3788D207B57AC00915D3D /* CCHistorySearchTableViewCell.xib */,
+				F2A3788E207B57AC00915D3D /* CCHotSearchCollectionViewCell.h */,
+				F2A3788F207B57AC00915D3D /* CCHotSearchCollectionViewCell.m */,
+				F2A37890207B57AC00915D3D /* CCHotSearchCollectionViewCell.xib */,
+				F2A37891207B57AC00915D3D /* CCHotSearchTableViewCell.h */,
+				F2A37892207B57AC00915D3D /* CCHotSearchTableViewCell.m */,
+				F2A37893207B57AC00915D3D /* CCHotSearchTableViewCell.xib */,
+				F2A37894207B57AC00915D3D /* CCSearchHeaderView.h */,
+				F2A37895207B57AC00915D3D /* CCSearchHeaderView.m */,
+				F2A37896207B57AC00915D3D /* CCSearchHeaderView.xib */,
+				F2A37897207B57AC00915D3D /* CCSearchItemTableViewCell.h */,
+				F2A37898207B57AC00915D3D /* CCSearchItemTableViewCell.m */,
+				F2A37899207B57AC00915D3D /* CCSearchItemTableViewCell.xib */,
+			);
+			path = search;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -914,17 +1067,25 @@
 			files = (
 				F21028AE2062350D0039F71E /* SASharePanel.xib in Resources */,
 				F21D662C206B87740026969A /* WZSettingImportantViewController.xib in Resources */,
+				F2A3789B207B57AC00915D3D /* CCHistorySearchHeaderView.xib in Resources */,
 				F21D6640206CE76A0026969A /* ALPLinkPartnerSDK.bundle in Resources */,
-				F2E779632069062B00E65319 /* yw_1222.jpg in Resources */,
+				F2A37871207B0FF500915D3D /* RankingView.xib in Resources */,
+				F2A378A3207B57AC00915D3D /* CCSearchHeaderView.xib in Resources */,
+				F2E779632069062B00E65319 /* yw_122222.jpg in Resources */,
 				F21D6634206B97640026969A /* carEmptry.xib in Resources */,
 				F21D663E206CE76A0026969A /* AlibabaAuthSDK.bundle in Resources */,
 				F21028932062350D0039F71E /* WZTableViewCell.xib in Resources */,
 				F21028912062350D0039F71E /* WZEmptyView.xib in Resources */,
+				F2A3789F207B57AC00915D3D /* CCHotSearchCollectionViewCell.xib in Resources */,
 				F21D6617206B86DA0026969A /* DGSettingViewController.xib in Resources */,
 				F21D6641206CE76A0026969A /* NBResource.bundle in Resources */,
+				F2A3789D207B57AC00915D3D /* CCHistorySearchTableViewCell.xib in Resources */,
+				F2A3786C207A316200915D3D /* DGHotBandCollectionViewCell.xib in Resources */,
 				F2E77977206B430400E65319 /* yw_122233.jpg in Resources */,
 				F21028DC20626FA70039F71E /* DGMyViewController.xib in Resources */,
 				F21D663F206CE76A0026969A /* AlipaySDK.bundle in Resources */,
+				F2A37861207A191300915D3D /* DGMainViewController.xib in Resources */,
+				F2A378A1207B57AC00915D3D /* CCHotSearchTableViewCell.xib in Resources */,
 				F21028BE2062448F0039F71E /* DGHomeListTableViewCell.xib in Resources */,
 				F21028E720627C270039F71E /* CCSearchHeaderButtonView.xib in Resources */,
 				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
@@ -932,6 +1093,9 @@
 				F21D662F206B87740026969A /* WZCustomerSettingTableViewCell.xib in Resources */,
 				F210288C2062350D0039F71E /* WZAdViewController.xib in Resources */,
 				F224E97620594B8E00C92206 /* yw_122211.jpg in Resources */,
+				F2A378A7207B6AA200915D3D /* yw_1222.jpg in Resources */,
+				F2A378A5207B57AC00915D3D /* CCSearchItemTableViewCell.xib in Resources */,
+				F2A37876207B1A7D00915D3D /* DGTopCellView.xib in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
 			);
@@ -1045,12 +1209,14 @@
 				F2E7796820690D6900E65319 /* DGSearchViewController.m in Sources */,
 				F21D6616206B86DA0026969A /* DGSettingViewController.m in Sources */,
 				F210282320622F6B0039F71E /* WZViewController.m in Sources */,
+				F2A3789E207B57AC00915D3D /* CCHotSearchCollectionViewCell.m in Sources */,
 				F21028AC2062350D0039F71E /* CCWXShare.m in Sources */,
 				F21028A62062350D0039F71E /* UIView+WZXibView.m in Sources */,
 				F210289E2062350D0039F71E /* WZResponse.m in Sources */,
 				F21028A42062350D0039F71E /* PINCache+YMCache.m in Sources */,
 				F21028DB20626FA70039F71E /* DGMyViewController.m in Sources */,
 				6003F59E195388D20070C39A /* DGAppDelegate.m in Sources */,
+				F2A37860207A191300915D3D /* DGMainViewController.m in Sources */,
 				F21028902062350D0039F71E /* WZEmptyView.m in Sources */,
 				F21028B9206244780039F71E /* DGListModel.m in Sources */,
 				F21028A02062350D0039F71E /* NSDate+WZDate.m in Sources */,
@@ -1058,6 +1224,7 @@
 				F210288B2062350D0039F71E /* WZAdViewController.m in Sources */,
 				F210288F2062350D0039F71E /* WZCollectionViewCell.m in Sources */,
 				F210282720622F6B0039F71E /* WZTableViewController.m in Sources */,
+				F2A37879207B46B100915D3D /* DGDetailViewController.m in Sources */,
 				F21028992062350D0039F71E /* WZModule.m in Sources */,
 				F21028962062350D0039F71E /* WZCellModel.m in Sources */,
 				F210282B20622F730039F71E /* WZWindow.m in Sources */,
@@ -1069,18 +1236,25 @@
 				F21028D420626E700039F71E /* DGSpecialViewController.m in Sources */,
 				F21028EA2063AAAB0039F71E /* DGGlobalConfig.m in Sources */,
 				F210282820622F6B0039F71E /* WZNavigationController.m in Sources */,
+				F2A37867207A300000915D3D /* DGHotBandCellModel.m in Sources */,
+				F2A378A4207B57AC00915D3D /* CCSearchItemTableViewCell.m in Sources */,
 				F21028AB2062350D0039F71E /* CCBridgeModule.m in Sources */,
 				F210289B2062350D0039F71E /* WZPush.m in Sources */,
 				F21028A52062350D0039F71E /* UIButton+WZButton.m in Sources */,
 				F21D662D206B87740026969A /* WZCustomerSettingItemCellModel.m in Sources */,
 				F21D662A206B87740026969A /* WZCustomerSettingViewController.m in Sources */,
+				F2A3789C207B57AC00915D3D /* CCHistorySearchTableViewCell.m in Sources */,
 				F210289C2062350D0039F71E /* WZRequest.m in Sources */,
 				6003F5A7195388D20070C39A /* DGViewController.m in Sources */,
+				F2A37886207B579E00915D3D /* CCSearchTableViewController.m in Sources */,
+				F2A3786F207B0FE100915D3D /* RankingView.m in Sources */,
+				F2A37864207A2C8200915D3D /* DGHotBandViewController.m in Sources */,
 				F21028E2206276FC0039F71E /* DGSpecialListViewController.m in Sources */,
 				F224E9792059519A00C92206 /* ALiTradeSDKShareParam.m in Sources */,
 				F210288E2062350D0039F71E /* WZCollectionReusableView.m in Sources */,
 				F2E7796B2069136300E65319 /* DGLaunchImageView.m in Sources */,
 				F210282620622F6B0039F71E /* WZCollectionViewController.m in Sources */,
+				F2A37883207B578300915D3D /* CCCCHotSearchCellModel.m in Sources */,
 				F21028A22062350D0039F71E /* NSString+WZFormat.m in Sources */,
 				F21028E620627C270039F71E /* CCSearchHeaderButtonView.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
@@ -1089,15 +1263,21 @@
 				F210282420622F6B0039F71E /* WZWebViewController.m in Sources */,
 				F21028D720626ED40039F71E /* DGCarViewController.m in Sources */,
 				F21D662B206B87740026969A /* WZSettingImportantViewController.m in Sources */,
+				F2A378A2207B57AC00915D3D /* CCSearchHeaderView.m in Sources */,
+				F2A3786B207A316200915D3D /* DGHotBandCollectionViewCell.m in Sources */,
 				F210288D2062350D0039F71E /* WZButton.m in Sources */,
+				F2A37874207B1A7100915D3D /* DGTopCellView.m in Sources */,
+				F2A378A0207B57AC00915D3D /* CCHotSearchTableViewCell.m in Sources */,
 				F21028A32062350D0039F71E /* NSString+WZString.m in Sources */,
 				F21028DF206274210039F71E /* DGBaoyouViewController.m in Sources */,
 				F224E97C205951E500C92206 /* ALiTradeWebViewController.m in Sources */,
 				F210282520622F6B0039F71E /* WZTabBarController.m in Sources */,
+				F2A3789A207B57AC00915D3D /* CCHistorySearchHeaderView.m in Sources */,
 				F21028922062350D0039F71E /* WZTableViewCell.m in Sources */,
 				F21028AF2062350D0039F71E /* SBDatePickerView.m in Sources */,
 				F21D662E206B87740026969A /* WZCustomerSettingTableViewCell.m in Sources */,
 				F21028B12062350D0039F71E /* WZShare.m in Sources */,
+				F2A3787C207B533A00915D3D /* DGShopViewController.m in Sources */,
 				F21028B22062350D0039F71E /* YHLTextFieldPhone.m in Sources */,
 				F210288A2062350D0039F71E /* SBUploadImageView.m in Sources */,
 			);
@@ -1248,7 +1428,7 @@
 					"$(PROJECT_DIR)/dg/common/Lib/Tencent/gbs",
 				);
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = com.cityym.youyougou;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cityym.ddyhq;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -1279,7 +1459,7 @@
 					"$(PROJECT_DIR)/dg/common/Lib/Tencent/gbs",
 				);
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = com.cityym.youyougou;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cityym.ddyhq;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";

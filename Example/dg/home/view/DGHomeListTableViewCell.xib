@@ -12,15 +12,15 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="207" id="KGk-i7-Jjw" customClass="DGHomeListTableViewCell">
-            <rect key="frame" x="0.0" y="0.0" width="441" height="207"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="149" id="KGk-i7-Jjw" customClass="DGHomeListTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="449" height="149"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="441" height="206.5"/>
+                <rect key="frame" x="0.0" y="0.0" width="449" height="148.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xj9-GN-wsT">
-                        <rect key="frame" x="0.0" y="0.0" width="441" height="206.5"/>
+                        <rect key="frame" x="0.0" y="0.0" width="449" height="148.5"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aoA-fR-LFS">
                                 <rect key="frame" x="10" y="15" width="120" height="120"/>
@@ -30,7 +30,7 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hnO-fU-7Oi">
-                                <rect key="frame" x="140" y="15" width="291" height="25"/>
+                                <rect key="frame" x="140" y="15" width="299" height="25"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="25" id="fiD-re-QNZ"/>
                                 </constraints>
@@ -45,7 +45,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ulM-GE-F96">
-                                <rect key="frame" x="400" y="32.5" width="31" height="25"/>
+                                <rect key="frame" x="408" y="32.5" width="31" height="25"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="25" id="uyP-cg-PAC"/>
                                 </constraints>
@@ -78,8 +78,8 @@
                                     <constraint firstAttribute="height" constant="0.5" id="KVp-4e-ysW"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" userInteractionEnabled="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9ah-VZ-QsW">
-                                <rect key="frame" x="346" y="166.5" width="80" height="30"/>
+                            <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9ah-VZ-QsW">
+                                <rect key="frame" x="354" y="108.5" width="80" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="qiF-rZ-A9B"/>
                                     <constraint firstAttribute="width" constant="80" id="xCt-dr-gq3"/>
@@ -87,16 +87,19 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <state key="normal" image="buy_yes"/>
                                 <state key="disabled" image="buy_no"/>
+                                <connections>
+                                    <action selector="btnClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="azH-0Y-4Yw"/>
+                                </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WXu-Dd-0g2">
-                                <rect key="frame" x="0.0" y="205.5" width="441" height="0.5"/>
+                                <rect key="frame" x="0.0" y="147.5" width="449" height="0.5"/>
                                 <color key="backgroundColor" red="0.90196078430000004" green="0.90196078430000004" blue="0.90196078430000004" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="0.5" id="sBh-Qi-WpD"/>
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vBl-2f-PHL">
-                                <rect key="frame" x="140" y="62.5" width="291" height="20"/>
+                                <rect key="frame" x="140" y="62.5" width="299" height="20"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="20" id="iaK-Tc-hZk"/>
                                 </constraints>
@@ -148,6 +151,7 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
             <connections>
+                <outlet property="buyButton" destination="9ah-VZ-QsW" id="pGu-e5-eeU"/>
                 <outlet property="des" destination="vBl-2f-PHL" id="occ-VY-EHl"/>
                 <outlet property="image" destination="aoA-fR-LFS" id="OEz-Vh-hdj"/>
                 <outlet property="marketLabel" destination="zpa-n5-HOo" id="qna-94-fIN"/>
@@ -156,11 +160,11 @@
                 <outlet property="titleLabel" destination="hnO-fU-7Oi" id="iik-Th-mNH"/>
                 <outlet property="totalLabel" destination="ulM-GE-F96" id="mS9-lB-wpK"/>
             </connections>
-            <point key="canvasLocation" x="-133.5" y="-94.5"/>
+            <point key="canvasLocation" x="-129.5" y="-123.5"/>
         </tableViewCell>
     </objects>
     <resources>
-        <image name="buy_no" width="73" height="20"/>
-        <image name="buy_yes" width="219" height="61"/>
+        <image name="buy_no" width="219" height="61"/>
+        <image name="buy_yes" width="218" height="61"/>
     </resources>
 </document>

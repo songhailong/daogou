@@ -24,3 +24,10 @@
     return self;
 }
 @end
+
+@implementation DGHomeBannerModel
+-(instancetype)parse:(NSDictionary *)info options:(NSUInteger)options{
+    [self ms_reflectDataRecursionFromOtherDictionary:info];
+    return self;
+}
+@end

@@ -32,7 +32,7 @@
         //adzoneid不为空的情况回归
         //mm_100713040_22792955_75330474
         //mm_127970548_0_0
-        self.taoKeParams = [[NSMutableDictionary alloc]initWithObjectsAndKeys:@"mm_127970548_0_0", @"pid",@"",@"unionId",@"", @"subPid", @"59786713",@"adzoneId",@{@"taokeAppkey":@"24834213"},@"extParams",nil];
+        self.taoKeParams = [[NSMutableDictionary alloc]initWithObjectsAndKeys:@"mm_127970548_0_0", @"pid",@"",@"unionId",@"", @"subPid", @"59786713",@"adzoneId",@{@"taokeAppkey":[NSString stringWithFormat:@"%d",alappkey]},@"extParams",nil];
         self.globalTaoKeParams = [[NSMutableDictionary alloc]initWithObjectsAndKeys:@"mm_100713040_22792955_75330474", @"pid",@"",@"unionId",@"", @"subPid",@"", @"adzoneId",nil];
  
  /*
@@ -41,7 +41,7 @@
         self.globalTaoKeParams = [[NSMutableDictionary alloc]initWithObjectsAndKeys:@"mm_100713040_22792955_75330474", @"pid",@"",@"unionId",@"",@"subPid",nil];
    */
   
-        self.backUrl=@"tbopen24834213";
+        self.backUrl= [NSString stringWithFormat:@"tbopen%d",alappkey];
         self.openType=0;
         self.linkKey=0;
         self.isNeedPush=NO;

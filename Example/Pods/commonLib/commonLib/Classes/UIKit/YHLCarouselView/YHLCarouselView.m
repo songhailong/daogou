@@ -128,7 +128,7 @@
     [self.currView.subviews makeObjectsPerformSelector:@selector(removeFromSuperview)];
     [self.currView addSubview:[self viewAtIndex:_currIndex]];
     self.pageControl.numberOfPages = number;
-
+    [self setNeedsLayout];
 }
 
 #pragma mark 设置pageControl的位置

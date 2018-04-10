@@ -10,6 +10,8 @@
 #warning "This project uses features only available in iOS SDK 5.0 and later."
 #endif
 
+#define alappkey 24839910
+
 #import <commonLib/UIColor+HexString.h>
 #import <commonLib/MSActiveControllerFinder.h>
 #import <MBProgressHUD/MBProgressHUD.h>
@@ -17,10 +19,13 @@
 #import <Masonry/Masonry.h>
 #import "WZRequest.h"
 #import "WZUrl.h"
+#import "NSString+Hash.h"
+#import "DGDetailViewController.h"
 
 #define WZwidth [[UIScreen mainScreen] bounds].size.width
 #define WZheight [[UIScreen mainScreen] bounds].size.height
 
+#define IS_IPHONEX (([[UIScreen mainScreen] bounds].size.height - 812) ? NO : YES)
 
 #ifdef __OBJC__
     @import UIKit;

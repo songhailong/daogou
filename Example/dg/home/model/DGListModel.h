@@ -23,5 +23,16 @@
 @property (nonatomic,strong) NSString *couponStartTime;
 @property (nonatomic,strong) NSString *prdtImgUrl;
 @property (nonatomic,strong) NSString *prdtId;
+@property (nonatomic,strong) NSString *prdtUrl;
 @property (nonatomic,strong) NSString *prdtName;
+@end
+
+@interface DGHomeBannerModel:WZCellModel
+
+@property (nonatomic,strong) NSString *bannerId;
+@property (nonatomic,strong) NSString *bannerName;
+@property (nonatomic,strong) NSString *clickUrl;
+@property (nonatomic,strong) NSString *imgUrl;
+@property (nonatomic,strong) NSString *endDate;
+@property (nonatomic,strong) NSString *startDate;
 @end

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="CCSearchHeaderView" id="iN0-l3-epB" customClass="CCSearchHeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="454" height="40"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ajx-80-Kna">
+                    <rect key="frame" x="15" y="5" width="379" height="30"/>
+                    <subviews>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="输入关键字，搜索更多优惠券" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="U4I-Vg-D3k">
+                            <rect key="frame" x="10" y="-0.5" width="369" height="30"/>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" returnKeyType="search"/>
+                        </textField>
+                    </subviews>
+                    <color key="backgroundColor" red="0.94901960784313721" green="0.95294117647058818" blue="0.96078431372549022" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="U4I-Vg-D3k" firstAttribute="leading" secondItem="Ajx-80-Kna" secondAttribute="leading" constant="10" id="WeS-Ym-7XT"/>
+                        <constraint firstItem="U4I-Vg-D3k" firstAttribute="top" secondItem="Ajx-80-Kna" secondAttribute="top" constant="-0.5" id="cVb-MK-hTg"/>
+                        <constraint firstAttribute="bottom" secondItem="U4I-Vg-D3k" secondAttribute="bottom" constant="0.5" id="dQq-jO-f8P"/>
+                        <constraint firstAttribute="trailing" secondItem="U4I-Vg-D3k" secondAttribute="trailing" id="iMa-nr-MQC"/>
+                        <constraint firstAttribute="height" constant="30" id="uiO-BY-tch"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="obJ-fR-u9s">
+                    <rect key="frame" x="394" y="0.0" width="60" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="09t-di-WRz"/>
+                        <constraint firstAttribute="width" constant="60" id="Rgf-KU-bxp"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <state key="normal" title="搜索">
+                        <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="cancelClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="64d-ho-UPi"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="obJ-fR-u9s" firstAttribute="leading" secondItem="Ajx-80-Kna" secondAttribute="trailing" id="TSQ-Fi-QPh"/>
+                <constraint firstItem="Ajx-80-Kna" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="5" id="gD7-pz-OLB"/>
+                <constraint firstAttribute="bottom" secondItem="obJ-fR-u9s" secondAttribute="bottom" priority="999" id="iB3-Rh-pUr"/>
+                <constraint firstItem="obJ-fR-u9s" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="j79-5T-lBC"/>
+                <constraint firstAttribute="trailing" secondItem="obJ-fR-u9s" secondAttribute="trailing" id="nIU-mb-Iqw"/>
+                <constraint firstItem="Ajx-80-Kna" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="qCe-sB-npd"/>
+                <constraint firstAttribute="bottom" secondItem="Ajx-80-Kna" secondAttribute="bottom" priority="999" constant="5" id="xAl-8z-4RD"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="contentView" destination="Ajx-80-Kna" id="6QT-nV-Ohp"/>
+                <outlet property="searchText" destination="U4I-Vg-D3k" id="9on-Sq-MLr"/>
+                <outlet property="searchTextField" destination="U4I-Vg-D3k" id="F3Y-cC-bA1"/>
+            </connections>
+            <point key="canvasLocation" x="10" y="-264"/>
+        </view>
+    </objects>
+</document>

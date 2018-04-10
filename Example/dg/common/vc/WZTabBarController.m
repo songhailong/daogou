@@ -19,6 +19,8 @@
 #import "DGBaoyouViewController.h"
 #import "DG99BaoyouViewController.h"
 #import "DGSpecialListViewController.h"
+#import "DGMainViewController.h"
+#import "CCSearchTableViewController.h"
 
 @interface WZTabBarController ()<UITabBarControllerDelegate>
 
@@ -47,7 +49,7 @@
     self.delegate=self;
     
     [[UITabBarItem appearance] setTitleTextAttributes:@{ NSForegroundColorAttributeName:[UIColor colorWithHexString:@"999999"]} forState:UIControlStateNormal];
-    [[UITabBarItem appearance] setTitleTextAttributes:@{ NSForegroundColorAttributeName:[UIColor colorWithHexString:@"1a1a1a"]} forState:UIControlStateSelected];
+    [[UITabBarItem appearance] setTitleTextAttributes:@{ NSForegroundColorAttributeName:[UIColor colorWithHexString:@"FA4F18"]} forState:UIControlStateSelected];
     [[UITabBar appearance] setBackgroundColor:[UIColor whiteColor]];
     [UITabBar appearance].translucent = NO;
     
@@ -72,8 +74,10 @@
 -(void) creatMainView{
     
     DGHomeViewController *home = [[DGHomeViewController alloc] init];
+//    DGMainViewController *home = [[DGMainViewController alloc] init];
 //    DGBaoyouViewController *baoyou = [[DGBaoyouViewController alloc] init];
-    DG99BaoyouViewController *baoyou = [[DG99BaoyouViewController alloc] initWithParam:@{@"cat":@"",@"title":@"9.9包邮"}];
+//    DG99BaoyouViewController *baoyou = [[DG99BaoyouViewController alloc] initWithParam:@{@"cat":@"",@"title":@"9.9包邮"}];
+    CCSearchTableViewController *search = [[CCSearchTableViewController alloc] init];
 //    DGSpecialViewController *special = [[DGSpecialViewController alloc] init];
     DGSpecialListViewController *special = [[DGSpecialListViewController alloc] initWithParam:@{@"cat":@"",@"title":@"特惠"}];
     DGCarViewController *car = [[DGCarViewController alloc] init];
@@ -81,8 +85,8 @@
     
     
     
-    [self addChildViewItem:home title:@"优惠券" image:@"coupon_nor" selectImage:@"coupon_pre"];
-    [self addChildViewItem:baoyou title:@"9.9包邮" image:@"free_nor" selectImage:@"free_pre"];
+    [self addChildViewItem:home title:@"首页" image:@"coupon_nor" selectImage:@"coupon_pre"];
+    [self addChildViewItem2:search title:@"搜索" image:@"em-icon-search" selectImage:@"em-icon-search"];
     [self addChildViewItem:special title:@"特惠" image:@"special_nor" selectImage:@"special_pre"];
     [self addChildViewItem:car title:@"购物车" image:@"car_pre" selectImage:@"car_nor"];
     [self addChildViewItem:me title:@"我的" image:@"customer_nor" selectImage:@"customer_pre"];
@@ -94,6 +98,20 @@
     imageV= [imageV imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     
     UIImage *selectImageV =[UIImage imageNamed:selectImage];
+    selectImageV= [selectImageV imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    
+    curItem.tabBarItem.image=imageV;
+    curItem.tabBarItem.selectedImage=selectImageV;
+    WZNavigationController *nav=[[WZNavigationController alloc] initWithRootViewController:curItem];
+    [self addChildViewController:nav];
+    
+}
+-(void) addChildViewItem2:(UIViewController *)curItem title:(NSString *)title image:(NSString *)image selectImage:(NSString *) selectImage{
+    curItem.tabBarItem.title=title;
+    UIImage *imageV =[UIImage imageWithIcon:image backgroundColor:[UIColor clearColor] iconColor:[UIColor colorWithHexString:@"999999"] iconScale:1 andSize:CGSizeMake(25, 25)];
+    imageV= [imageV imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    
+    UIImage *selectImageV =[UIImage imageWithIcon:image backgroundColor:[UIColor clearColor] iconColor:[UIColor colorWithHexString:@"FA4F18"] iconScale:1 andSize:CGSizeMake(25, 25)];
     selectImageV= [selectImageV imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     
     curItem.tabBarItem.image=imageV;

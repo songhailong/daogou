@@ -10,5 +10,6 @@
 
 @interface WZModule : NSObject
 
++(void)uploadUserInfo:(NSString *)tbaccount tbname:(NSString *)tbname;
 
 @end

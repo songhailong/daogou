@@ -75,9 +75,10 @@
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     DGListModel *model = (DGListModel *)[self.dataSource itemAtIndexPath:indexPath];
     if (model!=nil) {
-        NSURL *url = [NSURL URLWithString:model.couponClickUrl];
-        WZWebViewController *web = [[WZWebViewController alloc] initWithURL:url];
-        [self.navigationController pushViewController:web animated:YES];
+//        NSURL *url = [NSURL URLWithString:model.prdtUrl];
+//        WZWebViewController *web = [[WZWebViewController alloc] initWithURL:url];
+        DGDetailViewController *vc = [[DGDetailViewController alloc] initWidthId:model.prdtId];
+        [self.navigationController pushViewController:vc animated:YES];
         
     }
     

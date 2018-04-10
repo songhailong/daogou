@@ -17,6 +17,8 @@
 #import "DGMyOrderViewController.h"
 #import <commonLib/YHLAlert.h>
 #import "NSString+Hash.h"
+#import <PINCache/PINCache.h>
+#import "WZModule.h"
 @interface DGMyViewController ()
 
 @property(nonatomic, strong) loginSuccessCallback loginSuccessCallback;
@@ -87,10 +89,36 @@
         if (user.avatarUrl!=nil) {
             [self.headImage sd_setImageWithURL:[NSURL URLWithString:user.avatarUrl] placeholderImage:[UIImage imageNamed:@"head"]];
         }
-        
+        [WZModule uploadUserInfo:user.openId tbname:user.nick];
     }else{
         [self.loginButton setTitle:@"淘宝登录" forState:UIControlStateNormal];
         self.headImage.image=[UIImage imageNamed:@"head"];
+    }
+    
+    NSString *code = [[PINCache sharedCache] objectForKey:@"myCode"];
+    if (code!=nil) {
+        self.codeText.text=code;
+    }else{
+        NSString *isloadcode = [[PINCache sharedCache] objectForKey:@"isloadcode"];
+        if (isloadcode==nil) {
+            NSMutableDictionary *param = [NSMutableDictionary new];
+            NSString *imei=[[UIDevice currentDevice] identifierForVendor].UUIDString;
+            param[@"imei"]=imei;
+            param[@"type"]=@"IOS";
+            NSString *signString = [self signStringSearch2:param];
+            param[@"token"] = [signString md5String];
+            
+            [WZRequest GET:yhqinvitcodegetaction parameters:param headerFields:nil completion:^(id  _Nullable json, JSONModelError * _Nullable err) {
+                if (json!=nil) {
+                    [[PINCache sharedCache] setObject:@"true" forKey:@"isloadcode"];
+                    NSString *code = json[@"code"];
+                    if (code!=nil) {
+                        self.codeText.text=code;
+                        [[PINCache sharedCache] setObject:code forKey:@"myCode"];
+                    }
+                }
+            }];
+        }
     }
 }
 
@@ -147,12 +175,16 @@
     [self.navigationController pushViewController:vc animated:YES];
 }
 - (IBAction)submitClick:(id)sender {
-    
     NSString *code =self.codeText.text;
     if (code.length==0) {
         [[MyAlertView alertViewWithTitle:@"提示" message:@"邀请码不能为空！" oALinClicked:nil cancelButtonTitle:@"确定" otherButtonTitles:nil]show];
     }else{
         [self.view endEditing:YES];
+        NSString *locaCode = [[PINCache sharedCache] objectForKey:@"myCode"];
+        if ([code isEqualToString:locaCode]) {
+            [[MyAlertView alertViewWithTitle:@"提示" message:@"恭喜！邀请码提交成功！" oALinClicked:nil cancelButtonTitle:@"确定" otherButtonTitles:nil]show];
+            return;
+        }
         NSMutableDictionary *param = [NSMutableDictionary new];
         NSString *imei=[[UIDevice currentDevice] identifierForVendor].UUIDString;
         param[@"imei"]=imei;
@@ -164,6 +196,7 @@
             if (json!=nil) {
                 if ([json[@"errorCode"] integerValue]==0) {
                     [[MyAlertView alertViewWithTitle:@"提示" message:@"恭喜！邀请码提交成功！" oALinClicked:nil cancelButtonTitle:@"确定" otherButtonTitles:nil]show];
+                    [[PINCache sharedCache] setObject:code forKey:@"myCode"];
                 }else{
                     [[MyAlertView alertViewWithTitle:@"提示" message:@"邀请码输入错误" oALinClicked:nil cancelButtonTitle:@"确定" otherButtonTitles:nil]show];
                 }
@@ -181,6 +214,15 @@
     paramString=[paramString stringByAppendingString:dict[@"imei"]];
     paramString=[paramString stringByAppendingString:dict[@"code"]];
 //    paramString=[paramString stringByAppendingString:dict[@"type"]];
+    paramString=[paramString stringByAppendingString:apptoken];
+    
+    return paramString;
+}
+
+-(NSString *)signStringSearch2:(NSDictionary *)dict{
+    NSString *paramString=@"";
+    
+    paramString=[paramString stringByAppendingString:dict[@"imei"]];
     paramString=[paramString stringByAppendingString:apptoken];
     
     return paramString;

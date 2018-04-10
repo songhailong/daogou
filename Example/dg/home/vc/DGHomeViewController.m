@@ -11,6 +11,8 @@
 #import "DGListViewController.h"
 #import "CCSearchHeaderButtonView.h"
 #import "UIView+WZXibView.h"
+#import "DGMainViewController.h"
+
 @interface DGHomeViewController ()
 
 @end
@@ -37,17 +39,27 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 //    self.navigationItem.title=@"搜索";
-    self.view.backgroundColor=[UIColor redColor];
+//    self.view.backgroundColor=[UIColor redColor];
+    self.navigationItem.title=@"首页";
     
-    self.navigationItem.titleView=[CCSearchHeaderButtonView initWithXibWithFrame:CGRectMake(0, 5, WZwidth, 34)];
+//    CCSearchHeaderButtonView *headerView = [CCSearchHeaderButtonView initWithXibWithFrame:CGRectMake(0, 5, WZwidth, 34)];
+//    headerView.layer.cornerRadius=5;
+//    headerView.clipsToBounds=YES;
+//    self.navigationItem.titleView=headerView;
     
-//    self.selectedIndex = 0;
-    [self.navigationView setValue:[[NSNumber alloc] initWithInt:1] forKeyPath:@"aligment"];
+//    [self.navigationView setValue:[[NSNumber alloc] initWithInt:1] forKeyPath:@"aligment"];
     self.navigationView.selectedTextColor = [UIColor colorWithHexString:@"FA4F18"];
     self.navigationView.normalTextColor = [UIColor colorWithHexString:@"333333"];
 //    self.navigationView.backgroundColor = [UIColor whiteColor];
 //    self.navigationView.itemFont=[UIFont systemFontOfSize:14];
     self.navigationView.borderColor=[UIColor colorWithHexString:@"e6e6e6"];
+}
+
+-(void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    
+    self.selectedIndex=0;
+    
 }
 
 static NSArray *array ;
@@ -69,6 +81,11 @@ static NSArray *array ;
                        ];
     
     NSMutableArray *vcs = [NSMutableArray array];
+    
+    DGMainViewController *home = [[DGMainViewController alloc] init];
+    home.title=@"优选";
+    [vcs addObject:home];
+    
     for (NSDictionary *dict in array) {
         DGListViewController *vc = [[DGListViewController alloc] initWithParam:dict];
         [vcs addObject:vc];
