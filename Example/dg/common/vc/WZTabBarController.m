@@ -73,8 +73,9 @@
 #pragma mark 初始化子视图
 -(void) creatMainView{
     
-    DGHomeViewController *home = [[DGHomeViewController alloc] init];
-//    DGMainViewController *home = [[DGMainViewController alloc] init];
+    DGMainViewController *home = [[DGMainViewController alloc] init];
+    DGHomeViewController *category = [[DGHomeViewController alloc] init];
+    
 //    DGBaoyouViewController *baoyou = [[DGBaoyouViewController alloc] init];
 //    DG99BaoyouViewController *baoyou = [[DG99BaoyouViewController alloc] initWithParam:@{@"cat":@"",@"title":@"9.9包邮"}];
     CCSearchTableViewController *search = [[CCSearchTableViewController alloc] init];
@@ -85,12 +86,19 @@
     
     
     
+//    [self addChildViewItem:home title:@"首页" image:@"coupon_nor" selectImage:@"coupon_pre"];
+//    [self addChildViewItem2:search title:@"搜索" image:@"em-icon-search" selectImage:@"em-icon-search"];
+//    [self addChildViewItem:special title:@"特惠" image:@"special_nor" selectImage:@"special_pre"];
+//    [self addChildViewItem:car title:@"购物车" image:@"car_pre" selectImage:@"car_nor"];
+//    [self addChildViewItem:me title:@"我的" image:@"customer_nor" selectImage:@"customer_pre"];
+
     [self addChildViewItem:home title:@"首页" image:@"coupon_nor" selectImage:@"coupon_pre"];
+    [self addChildViewItem:category title:@"分类" image:@"special_nor" selectImage:@"special_pre"];
     [self addChildViewItem2:search title:@"搜索" image:@"em-icon-search" selectImage:@"em-icon-search"];
-    [self addChildViewItem:special title:@"特惠" image:@"special_nor" selectImage:@"special_pre"];
-    [self addChildViewItem:car title:@"购物车" image:@"car_pre" selectImage:@"car_nor"];
     [self addChildViewItem:me title:@"我的" image:@"customer_nor" selectImage:@"customer_pre"];
 }
+
+
 
 -(void) addChildViewItem:(UIViewController *)curItem title:(NSString *)title image:(NSString *)image selectImage:(NSString *) selectImage{
     curItem.tabBarItem.title=title;

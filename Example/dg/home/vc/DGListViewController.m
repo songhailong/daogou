@@ -77,8 +77,9 @@
     if (model!=nil) {
 //        NSURL *url = [NSURL URLWithString:model.prdtUrl];
 //        WZWebViewController *web = [[WZWebViewController alloc] initWithURL:url];
-        DGDetailViewController *vc = [[DGDetailViewController alloc] initWidthId:model.prdtId];
-        [self.navigationController pushViewController:vc animated:YES];
+//        DGDetailViewController *vc = [[DGDetailViewController alloc] initWidthId:model.prdtId];
+        DGProductDetailViewController *web = [[DGProductDetailViewController alloc] initWithId:model.prdtId];
+        [self.navigationController pushViewController:web animated:YES];
         
     }
     

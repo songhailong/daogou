@@ -66,7 +66,8 @@
 - (IBAction)btnClick:(id)sender {
     UINavigationController *nav = [MSActiveControllerFinder finder].activeNavigationController();
     NSURL *url = [NSURL URLWithString:self.model.couponClickUrl];
-    WZWebViewController *web = [[WZWebViewController alloc] initWithURL:url];
+//    WZWebViewController *web = [[WZWebViewController alloc] initWithURL:url];
+    DGProductDetailViewController *web = [[DGProductDetailViewController alloc] initWithId:self.model.prdtId];
     [nav pushViewController:web animated:YES];
 }
 @end

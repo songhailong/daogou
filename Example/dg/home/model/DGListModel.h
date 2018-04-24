@@ -7,24 +7,11 @@
 //
 
 #import "WZCellModel.h"
+#import "ProductItem.h"
 
-@interface DGListModel : WZCellModel
+@interface DGListModel : WZCellModel<ProductItemProtocal>
 
-@property (nonatomic,strong) NSString *couponClickUrl;
-@property (nonatomic,strong) NSString *couponEndTime;
-@property (nonatomic,strong) NSString *couponInfo;
 
-@property (nonatomic,assign) NSInteger couponLessHours;
-@property (nonatomic,assign) NSInteger couponRemainCount;
-@property (nonatomic,assign) NSInteger couponTotalCount;
-@property (nonatomic,assign) NSInteger couponValue;
-@property (nonatomic,assign) CGFloat prdtPrice;
-
-@property (nonatomic,strong) NSString *couponStartTime;
-@property (nonatomic,strong) NSString *prdtImgUrl;
-@property (nonatomic,strong) NSString *prdtId;
-@property (nonatomic,strong) NSString *prdtUrl;
-@property (nonatomic,strong) NSString *prdtName;
 @end
 
 @interface DGHomeBannerModel:WZCellModel
@@ -35,4 +22,8 @@
 @property (nonatomic,strong) NSString *imgUrl;
 @property (nonatomic,strong) NSString *endDate;
 @property (nonatomic,strong) NSString *startDate;
+@property (nonatomic,strong) NSString *linkParam;
+@property (nonatomic,strong) NSString *linkShowType;//页面展示模式：one-一行一商品，two-一行两个商品,twocross-一行两个商品交错
+@property (nonatomic,strong) NSString *linkTitle;
+@property (nonatomic,strong) NSString *linkType;
 @end

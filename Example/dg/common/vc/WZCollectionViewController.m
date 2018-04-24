@@ -60,6 +60,7 @@ static NSString * const reuseIdentifier = @"WZCollectionViewController";
     
     
     self.collectionView.mj_header= [MJRefreshNormalHeader headerWithRefreshingBlock:^{
+        self.page=1;
         [self headerRefreshing];
     }];
     

@@ -35,7 +35,11 @@
 //发送登录用户信息到服务端
 #define yhqtbaccountsubmitaction kMobileAPIFormat_M(@"/yhq/tbaccount.submit.action")
 
-//
+//获取banner native活动页数据
+#define yhqactiongetaction kMobileAPIFormat_M(@"/yhq/action.get.action")
+//商品详情
+#define yhqcouponmsgaction kMobileAPIFormat_M(@"/yhq/coupon.msg.action")
+
 
 
 #endif /* WZUrl_h */

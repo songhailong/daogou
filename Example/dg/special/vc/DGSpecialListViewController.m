@@ -81,8 +81,9 @@
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     DGListModel *model = (DGListModel *)[self.dataSource itemAtIndexPath:indexPath];
     if (model!=nil) {
-        DGDetailViewController *vc = [[DGDetailViewController alloc] initWidthId:model.prdtId];
-        [self.navigationController pushViewController:vc animated:YES];
+//        DGDetailViewController *vc = [[DGDetailViewController alloc] initWidthId:model.prdtId];
+        DGProductDetailViewController *web = [[DGProductDetailViewController alloc] initWithId:model.prdtId];
+        [self.navigationController pushViewController:web animated:YES];
     }
     
 }

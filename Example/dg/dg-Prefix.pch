@@ -21,7 +21,7 @@
 #import "WZUrl.h"
 #import "NSString+Hash.h"
 #import "DGDetailViewController.h"
-
+#import "DGProductDetailViewController.h"
 #define WZwidth [[UIScreen mainScreen] bounds].size.width
 #define WZheight [[UIScreen mainScreen] bounds].size.height
 

@@ -15,7 +15,7 @@
 }
 @property (nonatomic,strong) UICollectionView *collectionView;
 @property (nonatomic,strong) UICollectionViewFlowLayout *flowLayot;
-
+@property (nonatomic,assign) NSInteger page;
 
 
 @property (nonatomic,copy) NSArray<WZCollectionReusableModel *> *dataSource;

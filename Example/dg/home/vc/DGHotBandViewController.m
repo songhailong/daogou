@@ -42,7 +42,7 @@ static NSString * const headerClass = @"WZHomeHeaderCollectionReusableView";
         [self.collectionView.mj_header endRefreshing];
         if (json!=nil) {
             NSMutableArray *data =[[NSMutableArray alloc] init];
-            NSMutableArray *servers = [DGHotBandCellModel parseArray:json[@"brands"]];
+            NSMutableArray *servers = [DGHotBandCellModel parseArray:json[@"brand"][@"brands"]];
             WZCollectionReusableModel *model = [[WZCollectionReusableModel alloc] initWithParam:headerClass headerModel:@{@"title":@"车务相关"} items:servers];
             [data addObject:model];
             

@@ -19,16 +19,31 @@
 #import "NSString+Hash.h"
 #import <PINCache/PINCache.h>
 #import "WZModule.h"
+#import <commonLib/UIImage+Utility.h>
+#import <commonLib/UIColor+HexString.h>
+#import <commonLib/UIImage+FontAwesome.h>
+#import "NSString+WZString.h"
+#import "DGCarViewController.h"
+#import "DGFeedbackViewController.h"
+#import "DGMyCollectionViewController.h"
 @interface DGMyViewController ()
 
 @property(nonatomic, strong) loginSuccessCallback loginSuccessCallback;
 @property(nonatomic, strong) loginFailureCallback loginFailedCallback;
 
 @property (weak, nonatomic) IBOutlet UIButton *loginButton;
+@property (weak, nonatomic) IBOutlet UIButton *carButton;
+@property (weak, nonatomic) IBOutlet UIButton *collectionButton;
+@property (weak, nonatomic) IBOutlet UIButton *fkButton;
 
 - (IBAction)loginClick:(id)sender;
 - (IBAction)myorderClick:(id)sender;
 - (IBAction)settingClick:(id)sender;
+- (IBAction)carClick:(id)sender;
+- (IBAction)colClick:(id)sender;
+- (IBAction)fkClick:(id)sender;
+
+
 @property (weak, nonatomic) IBOutlet UITextField *codeText;
 - (IBAction)submitClick:(id)sender;
 @property (weak, nonatomic) IBOutlet UIImageView *headImage;
@@ -69,7 +84,13 @@
     self.headImage.userInteractionEnabled=YES;
     UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(login)];
     [self.headImage addGestureRecognizer:tap];
+ 
     
+    [self resetButton:self.carButton icon:@"icon-shopping-cart"];
+    [self resetButton:self.myorderButton icon:@"icon-reorder"];
+    [self resetButton:self.collectionButton icon:@"icon-star"];
+    [self resetButton:self.fkButton icon:@"em-icon-help"];
+    [self resetButton:self.settingButton icon:@"em-icon-tools"];
 }
 
 -(void)viewWillAppear:(BOOL)animated{
@@ -78,6 +99,10 @@
     [self setupUI];
 }
 
+-(void)resetButton:(UIButton *)btn icon:(NSString *)icon{
+    UIImage *image =[UIImage imageWithIcon:icon backgroundColor:[UIColor clearColor] iconColor:[UIColor colorWithHexString:@"FA4F18"] iconScale:1 andSize:CGSizeMake(24, 24)];
+    [btn setImage:image forState:UIControlStateNormal];
+}
 
 -(void)setupUI{
     if([[ALBBSession sharedInstance] isLogin]){
@@ -97,7 +122,7 @@
     
     NSString *code = [[PINCache sharedCache] objectForKey:@"myCode"];
     if (code!=nil) {
-        self.codeText.text=code;
+        self.codeText.text=[code URLDecodedString];
     }else{
         NSString *isloadcode = [[PINCache sharedCache] objectForKey:@"isloadcode"];
         if (isloadcode==nil) {
@@ -113,7 +138,7 @@
                     [[PINCache sharedCache] setObject:@"true" forKey:@"isloadcode"];
                     NSString *code = json[@"code"];
                     if (code!=nil) {
-                        self.codeText.text=code;
+                        self.codeText.text=[code URLDecodedString];
                         [[PINCache sharedCache] setObject:code forKey:@"myCode"];
                     }
                 }
@@ -126,6 +151,9 @@
     [super viewDidLayoutSubviews];
     [self buttonLayout:self.myorderButton];
     [self buttonLayout:self.settingButton];
+    [self buttonLayout:self.carButton];
+    [self buttonLayout:self.collectionButton];
+    [self buttonLayout:self.fkButton];
 }
 
 //button 上下布局
@@ -172,6 +200,32 @@
 
 - (IBAction)settingClick:(id)sender {
     WZCustomerSettingViewController *vc = [[WZCustomerSettingViewController alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
+}
+
+- (IBAction)carClick:(id)sender {
+    if(![[ALBBSession sharedInstance] isLogin]){
+        __weak typeof(self) weakSelf = self;
+        [YHLAlert showAlertinitWithTitle:@"提示" contentText:@"您还没有登录，需要马上登录吗？" leftButtonTitle:@"再看看" leftBlock:^{
+            
+        } rightButtonTitle:@"好的" rightBlock:^{
+            [weakSelf loginClick:nil];
+        }];
+    }else{
+        DGCarViewController *vc = [[DGCarViewController alloc] init];
+        [self.navigationController pushViewController:vc animated:YES];
+    }
+}
+
+- (IBAction)colClick:(id)sender {
+    
+    DGMyCollectionViewController *vc = [[DGMyCollectionViewController alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
+    
+}
+
+- (IBAction)fkClick:(id)sender {
+    DGFeedbackViewController *vc = [[DGFeedbackViewController alloc] init];
     [self.navigationController pushViewController:vc animated:YES];
 }
 - (IBAction)submitClick:(id)sender {

@@ -10,7 +10,7 @@
 #import <AlibcTradeSDK/AlibcTradeSDK.h>
 #import "WZWindow.h"
 #import <IQKeyboardManager/IQKeyboardManager.h>
-
+#import "WZShare.h"
 @implementation DGAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
@@ -21,6 +21,8 @@
     keyboardManager.shouldShowToolbarPlaceholder = NO;
     
     [self application:application];
+    
+    [WZShare shareConfig];
     
     [self.window makeKeyAndVisible];
     
@@ -55,6 +57,7 @@
     
     return YES;
 }
+
 
 - (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation{
     // 新接口写法

@@ -99,6 +99,19 @@
 		F224E97620594B8E00C92206 /* yw_122211.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F224E97520594B8E00C92206 /* yw_122211.jpg */; };
 		F224E9792059519A00C92206 /* ALiTradeSDKShareParam.m in Sources */ = {isa = PBXBuildFile; fileRef = F224E9772059519900C92206 /* ALiTradeSDKShareParam.m */; };
 		F224E97C205951E500C92206 /* ALiTradeWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F224E97B205951E500C92206 /* ALiTradeWebViewController.m */; };
+		F22D84D420886C6D00AFC47D /* DGFeedbackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F22D84D220886C6D00AFC47D /* DGFeedbackViewController.m */; };
+		F22D84D520886C6D00AFC47D /* DGFeedbackViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F22D84D320886C6D00AFC47D /* DGFeedbackViewController.xib */; };
+		F298699B208D8DB400B05009 /* DGProductListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F298699A208D8DB400B05009 /* DGProductListModel.m */; };
+		F298699F208D8E2400B05009 /* DGProductListCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F298699D208D8E2400B05009 /* DGProductListCollectionViewCell.m */; };
+		F29869A0208D8E2400B05009 /* DGProductListCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F298699E208D8E2400B05009 /* DGProductListCollectionViewCell.xib */; };
+		F29869A5208DC9D000B05009 /* DGProductListOneCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F29869A3208DC9D000B05009 /* DGProductListOneCollectionViewCell.m */; };
+		F29869A6208DC9D000B05009 /* DGProductListOneCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F29869A4208DC9D000B05009 /* DGProductListOneCollectionViewCell.xib */; };
+		F29869AA208DD54000B05009 /* DGProductDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F29869A8208DD54000B05009 /* DGProductDetailViewController.m */; };
+		F29869AB208DD54000B05009 /* DGProductDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F29869A9208DD54000B05009 /* DGProductDetailViewController.xib */; };
+		F29869AE208F1A1800B05009 /* DGMyCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F29869AD208F1A1800B05009 /* DGMyCollectionViewController.m */; };
+		F29869B3208F1AA600B05009 /* DGMyCollectionCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F29869B2208F1AA600B05009 /* DGMyCollectionCellModel.m */; };
+		F29869B7208F1ABE00B05009 /* DGMycollectionTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F29869B5208F1ABE00B05009 /* DGMycollectionTableViewCell.m */; };
+		F29869B8208F1ABE00B05009 /* DGMycollectionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F29869B6208F1ABE00B05009 /* DGMycollectionTableViewCell.xib */; };
 		F2A37860207A191300915D3D /* DGMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2A3785E207A191300915D3D /* DGMainViewController.m */; };
 		F2A37861207A191300915D3D /* DGMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2A3785F207A191300915D3D /* DGMainViewController.xib */; };
 		F2A37864207A2C8200915D3D /* DGHotBandViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2A37863207A2C8200915D3D /* DGHotBandViewController.m */; };
@@ -130,6 +143,7 @@
 		F2E7796820690D6900E65319 /* DGSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2E7796720690D6900E65319 /* DGSearchViewController.m */; };
 		F2E7796B2069136300E65319 /* DGLaunchImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = F2E7796A2069136300E65319 /* DGLaunchImageView.m */; };
 		F2E77977206B430400E65319 /* yw_122233.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F2E77976206B430300E65319 /* yw_122233.jpg */; };
+		F2FFC3EC2088A9D10082269D /* DGProductListTwoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F2FFC3EB2088A9D10082269D /* DGProductListTwoViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -308,6 +322,28 @@
 		F224E9782059519A00C92206 /* ALiTradeSDKShareParam.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALiTradeSDKShareParam.h; sourceTree = "<group>"; };
 		F224E97A205951E500C92206 /* ALiTradeWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALiTradeWebViewController.h; sourceTree = "<group>"; };
 		F224E97B205951E500C92206 /* ALiTradeWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALiTradeWebViewController.m; sourceTree = "<group>"; };
+		F22D84D120886C6D00AFC47D /* DGFeedbackViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DGFeedbackViewController.h; sourceTree = "<group>"; };
+		F22D84D220886C6D00AFC47D /* DGFeedbackViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DGFeedbackViewController.m; sourceTree = "<group>"; };
+		F22D84D320886C6D00AFC47D /* DGFeedbackViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DGFeedbackViewController.xib; sourceTree = "<group>"; };
+		F2986999208D8DB400B05009 /* DGProductListModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DGProductListModel.h; sourceTree = "<group>"; };
+		F298699A208D8DB400B05009 /* DGProductListModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DGProductListModel.m; sourceTree = "<group>"; };
+		F298699C208D8E2400B05009 /* DGProductListCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DGProductListCollectionViewCell.h; sourceTree = "<group>"; };
+		F298699D208D8E2400B05009 /* DGProductListCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DGProductListCollectionViewCell.m; sourceTree = "<group>"; };
+		F298699E208D8E2400B05009 /* DGProductListCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DGProductListCollectionViewCell.xib; sourceTree = "<group>"; };
+		F29869A1208D8F9F00B05009 /* ProductItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProductItem.h; sourceTree = "<group>"; };
+		F29869A2208DC9D000B05009 /* DGProductListOneCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DGProductListOneCollectionViewCell.h; sourceTree = "<group>"; };
+		F29869A3208DC9D000B05009 /* DGProductListOneCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DGProductListOneCollectionViewCell.m; sourceTree = "<group>"; };
+		F29869A4208DC9D000B05009 /* DGProductListOneCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DGProductListOneCollectionViewCell.xib; sourceTree = "<group>"; };
+		F29869A7208DD54000B05009 /* DGProductDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DGProductDetailViewController.h; sourceTree = "<group>"; };
+		F29869A8208DD54000B05009 /* DGProductDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DGProductDetailViewController.m; sourceTree = "<group>"; };
+		F29869A9208DD54000B05009 /* DGProductDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DGProductDetailViewController.xib; sourceTree = "<group>"; };
+		F29869AC208F1A1800B05009 /* DGMyCollectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DGMyCollectionViewController.h; sourceTree = "<group>"; };
+		F29869AD208F1A1800B05009 /* DGMyCollectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DGMyCollectionViewController.m; sourceTree = "<group>"; };
+		F29869B1208F1AA600B05009 /* DGMyCollectionCellModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DGMyCollectionCellModel.h; sourceTree = "<group>"; };
+		F29869B2208F1AA600B05009 /* DGMyCollectionCellModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DGMyCollectionCellModel.m; sourceTree = "<group>"; };
+		F29869B4208F1ABE00B05009 /* DGMycollectionTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DGMycollectionTableViewCell.h; sourceTree = "<group>"; };
+		F29869B5208F1ABE00B05009 /* DGMycollectionTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DGMycollectionTableViewCell.m; sourceTree = "<group>"; };
+		F29869B6208F1ABE00B05009 /* DGMycollectionTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DGMycollectionTableViewCell.xib; sourceTree = "<group>"; };
 		F2A3785D207A191300915D3D /* DGMainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DGMainViewController.h; sourceTree = "<group>"; };
 		F2A3785E207A191300915D3D /* DGMainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DGMainViewController.m; sourceTree = "<group>"; };
 		F2A3785F207A191300915D3D /* DGMainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DGMainViewController.xib; sourceTree = "<group>"; };
@@ -357,6 +393,8 @@
 		F2E779692069136300E65319 /* DGLaunchImageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DGLaunchImageView.h; sourceTree = "<group>"; };
 		F2E7796A2069136300E65319 /* DGLaunchImageView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DGLaunchImageView.m; sourceTree = "<group>"; };
 		F2E77976206B430300E65319 /* yw_122233.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = yw_122233.jpg; sourceTree = "<group>"; };
+		F2FFC3EA2088A9D10082269D /* DGProductListTwoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DGProductListTwoViewController.h; sourceTree = "<group>"; };
+		F2FFC3EB2088A9D10082269D /* DGProductListTwoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DGProductListTwoViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -430,6 +468,7 @@
 		6003F593195388D20070C39A /* Example for dg */ = {
 			isa = PBXGroup;
 			children = (
+				F2FFC3E62088A9A80082269D /* ProductList */,
 				F2A3787D207B576600915D3D /* search */,
 				F21028CB206260830039F71E /* special */,
 				F21028C7206260790039F71E /* my */,
@@ -586,6 +625,7 @@
 			children = (
 				F21028E82063AAAB0039F71E /* DGGlobalConfig.h */,
 				F21028E92063AAAB0039F71E /* DGGlobalConfig.m */,
+				F29869A1208D8F9F00B05009 /* ProductItem.h */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -796,19 +836,12 @@
 		F21028C7206260790039F71E /* my */ = {
 			isa = PBXGroup;
 			children = (
+				F29869AF208F1A8100B05009 /* model */,
+				F29869B0208F1A8100B05009 /* view */,
 				F21D661C206B87740026969A /* Setting */,
-				F21028C8206260790039F71E /* model */,
 				F21028C9206260790039F71E /* vc */,
-				F21028CA206260790039F71E /* view */,
 			);
 			path = my;
-			sourceTree = "<group>";
-		};
-		F21028C8206260790039F71E /* model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = model;
 			sourceTree = "<group>";
 		};
 		F21028C9206260790039F71E /* vc */ = {
@@ -820,15 +853,13 @@
 				F21D6613206B86DA0026969A /* DGSettingViewController.h */,
 				F21D6614206B86DA0026969A /* DGSettingViewController.m */,
 				F21D6615206B86DA0026969A /* DGSettingViewController.xib */,
+				F22D84D120886C6D00AFC47D /* DGFeedbackViewController.h */,
+				F22D84D220886C6D00AFC47D /* DGFeedbackViewController.m */,
+				F22D84D320886C6D00AFC47D /* DGFeedbackViewController.xib */,
+				F29869AC208F1A1800B05009 /* DGMyCollectionViewController.h */,
+				F29869AD208F1A1800B05009 /* DGMyCollectionViewController.m */,
 			);
 			path = vc;
-			sourceTree = "<group>";
-		};
-		F21028CA206260790039F71E /* view */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = view;
 			sourceTree = "<group>";
 		};
 		F21028CB206260830039F71E /* special */ = {
@@ -920,6 +951,25 @@
 			path = resource;
 			sourceTree = "<group>";
 		};
+		F29869AF208F1A8100B05009 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				F29869B1208F1AA600B05009 /* DGMyCollectionCellModel.h */,
+				F29869B2208F1AA600B05009 /* DGMyCollectionCellModel.m */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		F29869B0208F1A8100B05009 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				F29869B4208F1ABE00B05009 /* DGMycollectionTableViewCell.h */,
+				F29869B5208F1ABE00B05009 /* DGMycollectionTableViewCell.m */,
+				F29869B6208F1ABE00B05009 /* DGMycollectionTableViewCell.xib */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
 		F2A3787D207B576600915D3D /* search */ = {
 			isa = PBXGroup;
 			children = (
@@ -979,6 +1029,50 @@
 				F2A37899207B57AC00915D3D /* CCSearchItemTableViewCell.xib */,
 			);
 			path = search;
+			sourceTree = "<group>";
+		};
+		F2FFC3E62088A9A80082269D /* ProductList */ = {
+			isa = PBXGroup;
+			children = (
+				F2FFC3E72088A9A80082269D /* model */,
+				F2FFC3E82088A9A80082269D /* vc */,
+				F2FFC3E92088A9A80082269D /* view */,
+			);
+			path = ProductList;
+			sourceTree = "<group>";
+		};
+		F2FFC3E72088A9A80082269D /* model */ = {
+			isa = PBXGroup;
+			children = (
+				F2986999208D8DB400B05009 /* DGProductListModel.h */,
+				F298699A208D8DB400B05009 /* DGProductListModel.m */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		F2FFC3E82088A9A80082269D /* vc */ = {
+			isa = PBXGroup;
+			children = (
+				F2FFC3EA2088A9D10082269D /* DGProductListTwoViewController.h */,
+				F2FFC3EB2088A9D10082269D /* DGProductListTwoViewController.m */,
+				F29869A7208DD54000B05009 /* DGProductDetailViewController.h */,
+				F29869A8208DD54000B05009 /* DGProductDetailViewController.m */,
+				F29869A9208DD54000B05009 /* DGProductDetailViewController.xib */,
+			);
+			path = vc;
+			sourceTree = "<group>";
+		};
+		F2FFC3E92088A9A80082269D /* view */ = {
+			isa = PBXGroup;
+			children = (
+				F298699C208D8E2400B05009 /* DGProductListCollectionViewCell.h */,
+				F298699D208D8E2400B05009 /* DGProductListCollectionViewCell.m */,
+				F298699E208D8E2400B05009 /* DGProductListCollectionViewCell.xib */,
+				F29869A2208DC9D000B05009 /* DGProductListOneCollectionViewCell.h */,
+				F29869A3208DC9D000B05009 /* DGProductListOneCollectionViewCell.m */,
+				F29869A4208DC9D000B05009 /* DGProductListOneCollectionViewCell.xib */,
+			);
+			path = view;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1065,6 +1159,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F29869A6208DC9D000B05009 /* DGProductListOneCollectionViewCell.xib in Resources */,
 				F21028AE2062350D0039F71E /* SASharePanel.xib in Resources */,
 				F21D662C206B87740026969A /* WZSettingImportantViewController.xib in Resources */,
 				F2A3789B207B57AC00915D3D /* CCHistorySearchHeaderView.xib in Resources */,
@@ -1072,11 +1167,13 @@
 				F2A37871207B0FF500915D3D /* RankingView.xib in Resources */,
 				F2A378A3207B57AC00915D3D /* CCSearchHeaderView.xib in Resources */,
 				F2E779632069062B00E65319 /* yw_122222.jpg in Resources */,
+				F29869B8208F1ABE00B05009 /* DGMycollectionTableViewCell.xib in Resources */,
 				F21D6634206B97640026969A /* carEmptry.xib in Resources */,
 				F21D663E206CE76A0026969A /* AlibabaAuthSDK.bundle in Resources */,
 				F21028932062350D0039F71E /* WZTableViewCell.xib in Resources */,
 				F21028912062350D0039F71E /* WZEmptyView.xib in Resources */,
 				F2A3789F207B57AC00915D3D /* CCHotSearchCollectionViewCell.xib in Resources */,
+				F22D84D520886C6D00AFC47D /* DGFeedbackViewController.xib in Resources */,
 				F21D6617206B86DA0026969A /* DGSettingViewController.xib in Resources */,
 				F21D6641206CE76A0026969A /* NBResource.bundle in Resources */,
 				F2A3789D207B57AC00915D3D /* CCHistorySearchTableViewCell.xib in Resources */,
@@ -1097,7 +1194,9 @@
 				F2A378A5207B57AC00915D3D /* CCSearchItemTableViewCell.xib in Resources */,
 				F2A37876207B1A7D00915D3D /* DGTopCellView.xib in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
+				F29869A0208D8E2400B05009 /* DGProductListCollectionViewCell.xib in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
+				F29869AB208DD54000B05009 /* DGProductDetailViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1205,6 +1304,7 @@
 				F21028952062350D0039F71E /* WZAppSetting.m in Sources */,
 				F21028972062350D0039F71E /* WZCollectionReusableModel.m in Sources */,
 				F210289D2062350D0039F71E /* WZRequestModel.m in Sources */,
+				F29869A5208DC9D000B05009 /* DGProductListOneCollectionViewCell.m in Sources */,
 				F210282E2062336B0039F71E /* DGHomeViewController.m in Sources */,
 				F2E7796820690D6900E65319 /* DGSearchViewController.m in Sources */,
 				F21D6616206B86DA0026969A /* DGSettingViewController.m in Sources */,
@@ -1248,9 +1348,12 @@
 				6003F5A7195388D20070C39A /* DGViewController.m in Sources */,
 				F2A37886207B579E00915D3D /* CCSearchTableViewController.m in Sources */,
 				F2A3786F207B0FE100915D3D /* RankingView.m in Sources */,
+				F29869AA208DD54000B05009 /* DGProductDetailViewController.m in Sources */,
 				F2A37864207A2C8200915D3D /* DGHotBandViewController.m in Sources */,
+				F2FFC3EC2088A9D10082269D /* DGProductListTwoViewController.m in Sources */,
 				F21028E2206276FC0039F71E /* DGSpecialListViewController.m in Sources */,
 				F224E9792059519A00C92206 /* ALiTradeSDKShareParam.m in Sources */,
+				F29869B3208F1AA600B05009 /* DGMyCollectionCellModel.m in Sources */,
 				F210288E2062350D0039F71E /* WZCollectionReusableView.m in Sources */,
 				F2E7796B2069136300E65319 /* DGLaunchImageView.m in Sources */,
 				F210282620622F6B0039F71E /* WZCollectionViewController.m in Sources */,
@@ -1267,11 +1370,14 @@
 				F2A3786B207A316200915D3D /* DGHotBandCollectionViewCell.m in Sources */,
 				F210288D2062350D0039F71E /* WZButton.m in Sources */,
 				F2A37874207B1A7100915D3D /* DGTopCellView.m in Sources */,
+				F29869B7208F1ABE00B05009 /* DGMycollectionTableViewCell.m in Sources */,
 				F2A378A0207B57AC00915D3D /* CCHotSearchTableViewCell.m in Sources */,
+				F298699B208D8DB400B05009 /* DGProductListModel.m in Sources */,
 				F21028A32062350D0039F71E /* NSString+WZString.m in Sources */,
 				F21028DF206274210039F71E /* DGBaoyouViewController.m in Sources */,
 				F224E97C205951E500C92206 /* ALiTradeWebViewController.m in Sources */,
 				F210282520622F6B0039F71E /* WZTabBarController.m in Sources */,
+				F298699F208D8E2400B05009 /* DGProductListCollectionViewCell.m in Sources */,
 				F2A3789A207B57AC00915D3D /* CCHistorySearchHeaderView.m in Sources */,
 				F21028922062350D0039F71E /* WZTableViewCell.m in Sources */,
 				F21028AF2062350D0039F71E /* SBDatePickerView.m in Sources */,
@@ -1279,6 +1385,8 @@
 				F21028B12062350D0039F71E /* WZShare.m in Sources */,
 				F2A3787C207B533A00915D3D /* DGShopViewController.m in Sources */,
 				F21028B22062350D0039F71E /* YHLTextFieldPhone.m in Sources */,
+				F29869AE208F1A1800B05009 /* DGMyCollectionViewController.m in Sources */,
+				F22D84D420886C6D00AFC47D /* DGFeedbackViewController.m in Sources */,
 				F210288A2062350D0039F71E /* SBUploadImageView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

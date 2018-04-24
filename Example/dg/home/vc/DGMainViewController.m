@@ -21,6 +21,8 @@
 #import "DGTopCellView.h"
 #import <MJRefresh/UIScrollView+MJRefresh.h>
 #import <YHLTableView/SBRefreshNormalHeader.h>
+#import "DGProductListTwoViewController.h"
+
 @interface DGMainViewController ()<YHLCarouselViewDelegate>
 
 @property (nonatomic, strong, readwrite) MJRefreshNormalHeader *refreshHeader;
@@ -49,6 +51,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    self.navigationItem.title=@"首页";
+    
     self.bannerView.delegate=self;
     self.bannerView.pagePosition=CarouselPositionBottomCenter;
     self.bannerView.pageControlOtherColor=[UIColor colorWithHexString:@"999999"];
@@ -123,10 +128,20 @@
 - (void)carouselView:(YHLCarouselView *)carouselView didSelectViewAtIndex:(NSInteger)index{
     DGHomeBannerModel *model = self.bannerData[index];
     if (model!=nil) {
-        NSURL *url = [NSURL URLWithString:model.clickUrl];
-        WZWebViewController *web = [[WZWebViewController alloc] initWithURL:url];
-        [self.navigationController pushViewController:web animated:YES];
-        
+        if ([model.linkType isEqualToString:@"native"]) {
+            if ([model.linkShowType isEqualToString:@"one"]) {
+                DGProductListTwoViewController *vc = [[DGProductListTwoViewController alloc] initWithModel:model];
+                [self.navigationController pushViewController:vc animated:YES];
+            }else{
+                DGProductListTwoViewController *vc = [[DGProductListTwoViewController alloc] initWithModel:model];
+                [self.navigationController pushViewController:vc animated:YES];
+            }
+            
+        }else{
+            NSURL *url = [NSURL URLWithString:model.clickUrl];
+            WZWebViewController *web = [[WZWebViewController alloc] initWithURL:url];
+            [self.navigationController pushViewController:web animated:YES];
+        }
     }
 }
 

@@ -12,6 +12,6 @@
 @implementation WZShare
 
 +(void)shareConfig{
-    [WXApi registerApp:@"wx4c43a6a5c7f40fb7"];
+    [WXApi registerApp:@"wx8cc81b279eefd239"];
 }
 @end
