@@ -73,7 +73,7 @@
 
 +(AlibcOpenType)openType{
     
-    AlibcOpenType openType=AlibcOpenTypeH5;
+    AlibcOpenType openType=AlibcOpenTypeNative;
 //    switch ([ALiTradeSDKShareParam sharedInstance].openType) {
 //        case 0:
 //            openType=AlibcOpenTypeAuto;

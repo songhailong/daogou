@@ -59,7 +59,8 @@
 
 -(void)showDetail{
     UINavigationController *nav = [MSActiveControllerFinder finder].activeNavigationController();
-    DGDetailViewController *vc = [[DGDetailViewController alloc] initWidthId:self.model.prdtId];
+//    DGDetailViewController *vc = [[DGDetailViewController alloc] initWidthId:self.model.prdtId];
+    DGProductDetailViewController *vc = [[DGProductDetailViewController alloc] initWithId:self.model.prdtId];
     [nav pushViewController:vc animated:YES];
 }
 

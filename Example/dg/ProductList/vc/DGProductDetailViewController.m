@@ -17,9 +17,13 @@
 #import "UIButton+WZButton.h"
 #import <PINCache/PINCache.h>
 #import "SASharePanel.h"
+#import "DGGlobalConfig.h"
 @interface DGProductDetailViewController ()
 @property (nonatomic,strong) NSString *prdtId;
 @property (nonatomic,strong) NSDictionary *item;
+
+@property (nonatomic, strong) AlibcTradeProcessSuccessCallback onTradeSuccess;
+@property (nonatomic, strong) AlibcTradeProcessFailedCallback onTradeFailure;
 
 @property (weak, nonatomic) IBOutlet UIImageView *productImage;
 @property (weak, nonatomic) IBOutlet UILabel *nameLabel;
@@ -62,6 +66,13 @@
     [self resetButton:self.colButton icon:@"icon-star"];
     [self resetButton:self.shareButton icon:@"em-icon-share"];
     [self loadProductDetail];
+    
+    _onTradeSuccess=^(AlibcTradeResult *tradeProcessResult){
+        NSLog(@"aa===%lu",(unsigned long)tradeProcessResult.result);
+    };
+    _onTradeFailure=^(NSError *error){
+        NSLog(@"打开订单失败");
+    };
 }
 
 -(void)viewDidLayoutSubviews{
@@ -133,6 +144,7 @@
     return paramString;
 }
 - (IBAction)couponClick:(id)sender {
+    [self openCar];
 }
 
 - (IBAction)shopClick:(id)sender {
@@ -190,4 +202,22 @@
     UIImage *image =[UIImage imageWithIcon:icon backgroundColor:[UIColor clearColor] iconColor:[UIColor colorWithHexString:@"FA4F18"] iconScale:1 andSize:CGSizeMake(20, 20)];
     [btn setImage:image forState:UIControlStateNormal];
 }
+
+
+- (void)openCar {
+//    id<AlibcTradePage> page = [AlibcTradePageFactory itemMiniDetailPage:[NSString stringWithFormat:@"%@",self.prdtId]];
+    id<AlibcTradePage> page = [AlibcTradePageFactory page:self.item[@"couponClickUrl"]];
+    
+    AlibcTradeShowParams* showParam = [[AlibcTradeShowParams alloc] init];
+    showParam.openType = [DGGlobalConfig openType];
+    showParam.backUrl=[ALiTradeSDKShareParam sharedInstance].backUrl;
+    showParam.nativeFailMode=[DGGlobalConfig NativeFailMode];
+    showParam.linkKey=[DGGlobalConfig schemeType];
+    
+    ALiTradeWebViewController* view = [[ALiTradeWebViewController alloc] init];
+    
+    [[AlibcTradeSDK sharedInstance].tradeService show:self webView:view.webView page:page showParams:showParam taoKeParams:[DGGlobalConfig taokeParam] trackParam:[DGGlobalConfig customParam] tradeProcessSuccessCallback:self.onTradeSuccess tradeProcessFailedCallback:self.onTradeFailure];
+    
+}
+
 @end
