@@ -101,6 +101,7 @@
 		F224E97C205951E500C92206 /* ALiTradeWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F224E97B205951E500C92206 /* ALiTradeWebViewController.m */; };
 		F22D84D420886C6D00AFC47D /* DGFeedbackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F22D84D220886C6D00AFC47D /* DGFeedbackViewController.m */; };
 		F22D84D520886C6D00AFC47D /* DGFeedbackViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F22D84D320886C6D00AFC47D /* DGFeedbackViewController.xib */; };
+		F25E5919209183A4009582ED /* DGBaoyouTwoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F25E5918209183A4009582ED /* DGBaoyouTwoViewController.m */; };
 		F298699B208D8DB400B05009 /* DGProductListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F298699A208D8DB400B05009 /* DGProductListModel.m */; };
 		F298699F208D8E2400B05009 /* DGProductListCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F298699D208D8E2400B05009 /* DGProductListCollectionViewCell.m */; };
 		F29869A0208D8E2400B05009 /* DGProductListCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F298699E208D8E2400B05009 /* DGProductListCollectionViewCell.xib */; };
@@ -325,6 +326,8 @@
 		F22D84D120886C6D00AFC47D /* DGFeedbackViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DGFeedbackViewController.h; sourceTree = "<group>"; };
 		F22D84D220886C6D00AFC47D /* DGFeedbackViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DGFeedbackViewController.m; sourceTree = "<group>"; };
 		F22D84D320886C6D00AFC47D /* DGFeedbackViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DGFeedbackViewController.xib; sourceTree = "<group>"; };
+		F25E5917209183A4009582ED /* DGBaoyouTwoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DGBaoyouTwoViewController.h; sourceTree = "<group>"; };
+		F25E5918209183A4009582ED /* DGBaoyouTwoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DGBaoyouTwoViewController.m; sourceTree = "<group>"; };
 		F2986999208D8DB400B05009 /* DGProductListModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DGProductListModel.h; sourceTree = "<group>"; };
 		F298699A208D8DB400B05009 /* DGProductListModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DGProductListModel.m; sourceTree = "<group>"; };
 		F298699C208D8E2400B05009 /* DGProductListCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DGProductListCollectionViewCell.h; sourceTree = "<group>"; };
@@ -786,6 +789,8 @@
 				F21028D0206268370039F71E /* DG99BaoyouViewController.m */,
 				F21028DD206274210039F71E /* DGBaoyouViewController.h */,
 				F21028DE206274210039F71E /* DGBaoyouViewController.m */,
+				F25E5917209183A4009582ED /* DGBaoyouTwoViewController.h */,
+				F25E5918209183A4009582ED /* DGBaoyouTwoViewController.m */,
 			);
 			path = vc;
 			sourceTree = "<group>";
@@ -1345,6 +1350,7 @@
 				F21D662A206B87740026969A /* WZCustomerSettingViewController.m in Sources */,
 				F2A3789C207B57AC00915D3D /* CCHistorySearchTableViewCell.m in Sources */,
 				F210289C2062350D0039F71E /* WZRequest.m in Sources */,
+				F25E5919209183A4009582ED /* DGBaoyouTwoViewController.m in Sources */,
 				6003F5A7195388D20070C39A /* DGViewController.m in Sources */,
 				F2A37886207B579E00915D3D /* CCSearchTableViewController.m in Sources */,
 				F2A3786F207B0FE100915D3D /* RankingView.m in Sources */,

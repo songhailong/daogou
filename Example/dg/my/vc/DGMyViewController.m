@@ -185,7 +185,7 @@
 }
 
 - (IBAction)myorderClick:(id)sender {
-    if([[ALBBSession sharedInstance] isLogin]){
+    if(![[ALBBSession sharedInstance] isLogin]){
         __weak typeof(self) weakSelf = self;
         [YHLAlert showAlertinitWithTitle:@"提示" contentText:@"您还没有登录，需要马上登录吗？" leftButtonTitle:@"再看看" leftBlock:^{
             
@@ -193,16 +193,16 @@
             [weakSelf loginClick:nil];
         }];
     }else{
-//        DGMyOrderViewController *vc = [[DGMyOrderViewController alloc] init];
-//        [self.navigationController pushViewController:vc animated:YES];
-        id<AlibcTradePage> page = [AlibcTradePageFactory myOrdersPage:0 isAllOrder:YES];
-        AlibcTradeShowParams* showParam = [[AlibcTradeShowParams alloc] init];
-        showParam.openType = [DGGlobalConfig openType];
-        showParam.backUrl=[ALiTradeSDKShareParam sharedInstance].backUrl;
-        showParam.nativeFailMode=[DGGlobalConfig NativeFailMode];
-        showParam.linkKey=[DGGlobalConfig schemeType];
-        ALiTradeWebViewController* view = [[ALiTradeWebViewController alloc] init];
-        [[AlibcTradeSDK sharedInstance].tradeService show:self webView:view.webView page:page showParams:showParam taoKeParams:[DGGlobalConfig taokeParam] trackParam:[DGGlobalConfig customParam] tradeProcessSuccessCallback:nil tradeProcessFailedCallback:nil];
+        DGMyOrderViewController *vc = [[DGMyOrderViewController alloc] init];
+        [self.navigationController pushViewController:vc animated:YES];
+//        id<AlibcTradePage> page = [AlibcTradePageFactory myOrdersPage:0 isAllOrder:YES];
+//        AlibcTradeShowParams* showParam = [[AlibcTradeShowParams alloc] init];
+//        showParam.openType = [DGGlobalConfig openType];
+//        showParam.backUrl=[ALiTradeSDKShareParam sharedInstance].backUrl;
+//        showParam.nativeFailMode=[DGGlobalConfig NativeFailMode];
+//        showParam.linkKey=[DGGlobalConfig schemeType];
+//        ALiTradeWebViewController* view = [[ALiTradeWebViewController alloc] init];
+//        [[AlibcTradeSDK sharedInstance].tradeService show:self webView:view.webView page:page showParams:showParam taoKeParams:[DGGlobalConfig taokeParam] trackParam:[DGGlobalConfig customParam] tradeProcessSuccessCallback:nil tradeProcessFailedCallback:nil];
     }
 }
 

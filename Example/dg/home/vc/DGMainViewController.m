@@ -22,6 +22,8 @@
 #import <MJRefresh/UIScrollView+MJRefresh.h>
 #import <YHLTableView/SBRefreshNormalHeader.h>
 #import "DGProductListTwoViewController.h"
+#import "DGBaoyouTwoViewController.h"
+
 
 @interface DGMainViewController ()<YHLCarouselViewDelegate>
 
@@ -155,7 +157,8 @@
 
 #pragma mark model
 - (IBAction)firstClick:(id)sender {
-    DG99BaoyouViewController *baoyou = [[DG99BaoyouViewController alloc] initWithParam:@{@"cat":@"",@"title":@"9.9包邮"}];
+//    DG99BaoyouViewController *baoyou = [[DG99BaoyouViewController alloc] initWithParam:@{@"cat":@"",@"title":@"9.9包邮"}];
+    DGBaoyouTwoViewController *baoyou = [[DGBaoyouTwoViewController alloc] init];
     [self.navigationController pushViewController:baoyou animated:YES];
 }
 
@@ -196,12 +199,6 @@
         [self.topScrollView addSubview:rankingView];
         index++;
     }
-//    DGListModel *model = array.firstObject;
-//    CGRect frame =CGRectMake(0, index*155, WZwidth, 150);
-//    DGTopCellView *rankingView = [DGTopCellView initWithXibWithFrame:frame];
-//    [rankingView update:model];
-//    [self.topScrollView addSubview:rankingView];
-//    index++;
     self.topHeight.constant=150*index;
 }
 

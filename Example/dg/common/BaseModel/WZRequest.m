@@ -113,6 +113,7 @@ static NSString * const clientKey = @"ebf4c30a0d6142859c7dd33652f9ef54";
                   headerFields:( id)headerFields
                     completion:( JSONObjectBlock)completeBlock{
     yhlSessionManager *manager = [yhlSessionManager sharedManager];
+    manager.session.configuration.timeoutIntervalForRequest=30;
     NSMutableDictionary *param = [parameters mutableCopy];
     if (param==nil) {
         param=[NSMutableDictionary new];

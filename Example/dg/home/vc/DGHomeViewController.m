@@ -57,7 +57,7 @@
 -(void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
     
-    self.selectedIndex=0;
+//    self.selectedIndex=0;
     
 }
 

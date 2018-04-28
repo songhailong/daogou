@@ -42,7 +42,7 @@
 }
 
 - (void)openCar {
-    id<AlibcTradePage> page = [AlibcTradePageFactory itemMiniDetailPage:[NSString stringWithFormat:@"%@",self.Id]];
+    id<AlibcTradePage> page = [AlibcTradePageFactory itemDetailPage:[NSString stringWithFormat:@"%@",self.Id]];
     
     AlibcTradeShowParams* showParam = [[AlibcTradeShowParams alloc] init];
     showParam.openType = [DGGlobalConfig openType];
